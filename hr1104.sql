@@ -55,12 +55,26 @@ select employee_id, first_name from employees order by employee_id asc;
 select employee_id, first_name from employees order by employee_id desc;
 -- GROUP BY --
 select * from employees;    /*원래*/
-select * from employees where department_id >= 30;
-select department_id, salary from employees where department_id >= 30;
-select department_id, max(salary) from employees where department_id >= 30 group by department_id;
+select * from employees where department_id >= 70;
+select department_id, salary from employees where department_id >= 70;
+select department_id, max(salary) from employees where department_id >= 70 group by department_id;
 select department_id, max(salary), min(salary), sum(salary), round(avg(salary, 1),
-count(salary) from employees where department_id >= 90 group by department_id having sum(salary) >= 30000;
-
+count(salary) from employees where department_id >= 70 group by department_id having sum(salary) >= 30000;
+select max(salary), round(avg(salary, 1), sum(salary) from employees;
 
 select department_id, sum(salary) from employees 
 group by department_id having department_id = 30;
+-- 20번 부서에서 사원들의 입사년도 가져오기. --
+select employee_id, first_name, substr(hire_date, 1, 2) || '년도' as "입사년도" from employees where department_id = 20;
+SELECT TRIM(LEADING FROM ' ABCD ') LT, LENGTH(TRIM(LEADING FROM '        ABCD ')) LT_LEN, 
+        TRIM(TRAILING FROM ' ABCD ') RT, LENGTH(TRIM(TRAILING FROM '        ABCD ')) RT_LEN, 
+        TRIM(BOTH FROM '    ABCD ') BOTH1, LENGTH(TRIM(BOTH FROM '    ABCD ')) BOTH1, 
+        TRIM('    ABCD    ') BOTHT2, LENGTH(TRIM(' ABCD ')) BOTHLEN2
+FROM DUAL;
+-- 근무 달 수 구하기. --
+select * from employees where department_id = 30;
+select first_name, hire_date as "입사일", sysdate as "현재날짜", round(months_between(sysdate, hire_date)) 
+        as "근무달수" from employees where department_id = 30;
+-- NEXT_{DAY () 함수 --
+select sysdate, next_day(sysdate, '수요일') from dual;
+select sysdate, to_char(sysdate, 'yyyy/mm/dd hh24:mi:ss'), next_day(sysdate, '수요일') from dual;
