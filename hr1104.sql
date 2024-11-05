@@ -26,3 +26,26 @@ select first_name || '의 직급은' || job_id || '입니다.' from employees;
 select first_name || '의 직급은' || job_id || '입니다.' as data from employees;
 -- 중복 없는 출력. distinct--
 select distinct job_id from employees;
+-- 연봉 3000만원 이상인 사람. --
+select * from employees;
+describe employees;
+select * from employees where salary >= 3000;   /*연봉이 3천 이상인 사람.*/
+desc employees;
+-- 2008년 이후에 입사한 직원. --
+select * from employees where hire_date >= '2008/01/01';
+select * from employees where TO_CHAR(hire_date, 'YYYY/MM/DD') >= '2008/01/01';
+select * from employees where hire_date >= TO_DATE('2008/01/01', 'YYYY/MM/DD HH24:MI:SS');
+-- AND조건, BETWEEN a AND b --
+select * from employees where salary >= 2000 and salary <= 3000;
+select * from employees where salary >= 2000 and salary between 2000 and 3000;
+-- OR, IN( , ) 직원번호가 67이거나 101이거나 184인 사원 --
+select * from employees where employee_id = 67 or employee_id = 101 or employee_id = 184;
+select * from employees where employee_id in(67, 101, 184);
+-- NULL 연산, 비교, 할당 --
+select 100 + NULL from dual;
+select 100 - NULL from dual;
+describe employees;
+select * from employees where commission_pct = null;
+select * from employees;
+select * from emloyees where commission_pct is not null;
+select * from emloyees where commission_pct is null;
