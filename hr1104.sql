@@ -58,9 +58,9 @@ select * from employees;    /*¿ø·¡*/
 select * from employees where department_id >= 70;
 select department_id, salary from employees where department_id >= 70;
 select department_id, max(salary) from employees where department_id >= 70 group by department_id;
-select department_id, max(salary), min(salary), sum(salary), round(avg(salary, 1),
+select department_id, max(salary), min(salary), sum(salary), round(avg(salary), 1),
 count(salary) from employees where department_id >= 70 group by department_id having sum(salary) >= 30000;
-select max(salary), round(avg(salary, 1), sum(salary) from employees;
+select max(salary), round(avg(salary), 1), sum(salary) from employees;
 
 select department_id, sum(salary) from employees 
 group by department_id having department_id = 30;
