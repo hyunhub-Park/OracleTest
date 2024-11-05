@@ -78,3 +78,9 @@ select first_name, hire_date as "입사일", sysdate as "현재날짜", round(months_be
 -- NEXT_{DAY () 함수 --
 select sysdate, next_day(sysdate, '수요일') from dual;
 select sysdate, to_char(sysdate, 'yyyy/mm/dd hh24:mi:ss'), next_day(sysdate, '수요일') from dual;
+
+select employee_id, department_id, first_name, job_id, salary,
+	case department_id when 30 then salary*1.05
+end "인상된 결과"
+
+from employees;
