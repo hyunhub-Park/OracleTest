@@ -47,5 +47,20 @@ select 100 - NULL from dual;
 describe employees;
 select * from employees where commission_pct = null;
 select * from employees;
-select * from emloyees where commission_pct is not null;
-select * from emloyees where commission_pct is null;
+select * from employees where commission_pct is not null;
+select * from employees where commission_pct is null;
+-- ORDER BY ASC, DESC 사번 기준. --
+-- primary key 이므로 null은 없음. --
+select employee_id, first_name from employees order by employee_id asc;
+select employee_id, first_name from employees order by employee_id desc;
+-- GROUP BY --
+select * from employees;    /*원래*/
+select * from employees where department_id >= 30;
+select department_id, salary from employees where department_id >= 30;
+select department_id, max(salary) from employees where department_id >= 30 group by department_id;
+select department_id, max(salary), min(salary), sum(salary), round(avg(salary, 1),
+count(salary) from employees where department_id >= 90 group by department_id having sum(salary) >= 30000;
+
+
+select department_id, sum(salary) from employees 
+group by department_id having department_id = 30;
