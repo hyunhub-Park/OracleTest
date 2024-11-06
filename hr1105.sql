@@ -128,20 +128,53 @@ alter table emp01 modify salary number(10,2) not null;
 -- 1106 과제. --
 create table GRADES
 (
-    no NUMBER(10) not null, --pk--
-    name char(5) not null,
-    kor number(10) default 0 not null,
-    eng number(10) default 0 not null,
-    math number(10) default 0 not null,
-    
-    
+    NO NUMBER(10) NOT NULL, --pk--
+    NAME CHAR(5) NOT NULL,
+    KOR NUMBER(10) DEFAULT 0 NOT NULL,
+    ENG NUMBER(10) DEFAULT 0 NOT NULL,
+    MATH NUMBER(10) DEFAULT 0 NOT NULL,
+    TOTAL NUMBER(10) DEFAULT 0,
+    AVG NUMBER(10, 2) DEFAULT 0.0,
+    CODE NUMBER(10)
 );
+
+desc grades;
+select * from GRADES;
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME='GRADES';
+
+ALTER TABLE GRADES ADD CONSTRAINT GRADES_NO_PK PRIMARY KEY(NO);
+ALTER TABLE GRADES MODIFY CODE NUMBER(10) REFERENCES DEPARTMENT(DEP_CODE);  /* GRADES테이블의 CODE값은 DEPARTMENT의 학과코드를 참조한다. */
+ALTER TABLE GRADES MODIFY NAME CHAR(20);
+ALTER TABLE GRADES RENAME CONSTRAINT SYS_C007741 TO GRADES_CODE_RK;
+INSERT INTO GRADES(NO, NAME, KOR, ENG, MATH, TOTAL, AVG, CODE)
+        VALUES(20241106, '김학생', 95, 80, 70, 245, 81.7, 10);
+INSERT INTO GRADES(NO, NAME, KOR, ENG, MATH, TOTAL, AVG, CODE)
+        VALUES(20241106, '최학생', 85, 85, 90, 260, 86.7, 50); -- 학과코드 50은 DEPARTMENT 테이블에 없는 값으로 오류. --
+
+
+create table DEPARTMENT
+(
+    DEP_CODE NUMBER(10) NOT NULL, -- pk --
+    DEP_NAME VARCHAR2(30) NOT NULL
+);
+
+desc department;
+select * from DEPARTMENT;
+SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME='DEPARTMENT';
+
+ALTER TABLE DEPARTMENT ADD CONSTRAINT DEPARTMENT_DEP_CODE_PK PRIMARY KEY(DEP_CODE);
+ALTER TABLE DEPARTMENT MODIFY DEP_NAME VARCHAR2(30);
+INSERT INTO DEPARTMENT (DEP_CODE, DEP_NAME) VALUES (20241106, '컴퓨터공학');
+INSERT INTO DEPARTMENT (DEP_CODE, DEP_NAME) VALUES (20241105, '생명공학');
+UPDATE DEPARTMENT SET DEP_CODE=30 WHERE DEP_NAME='컴퓨터공학';
+UPDATE DEPARTMENT SET DEP_CODE=10 WHERE DEP_NAME='생명공학';
+SELECT DEP_CODE as 학과코드, DEP_NAME as 학과명 FROM DEPARTMENT;
 /*1.학번의 (숫자)데이터는 중복되거나 null값을 허용하면 안 되고
 2.이름은 문자데이터며 null값을 허용하지 않고
 국어, 영어, 수학 컬럼을 number 타입으로 가지고 모두 다 null값을 허용하지 않습니다.
 단, 국어,영어,수학 컬럼에 데이터를 넣지 않으면 기본값으로 0을 갖습니다.
 총점과 평균 컬럼은 기본값을 0을 갖습니다.
-학과코드는 학과 테이블에 학과 코드를 참조한다.
+학과코드는 학과 테이블에 학과 코드를 참조한다. -> 학과테이블의 학과코드를 참조. 외래키!
 학번/이름/국어/영어/수학/총점/평균/학과코드 이게 컬럼명이다.
 
 학과 테이블
