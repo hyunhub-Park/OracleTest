@@ -84,3 +84,33 @@ select employee_id, department_id, first_name, job_id, salary,
 end "인상된 결과"
 
 from employees;
+
+----
+select hire_date, first_name from employees where TO_CHAR(hire_date, 'yy')='03';
+select to_char(hire_date, 'yy/mm/dd hh24:mi:ss'), to_char(hire_date, 'yy') from employees;
+select to_date('20041214', 'yyyy/mm/dd')+1 from dual;
+select first_name from employees where upper(substr(first_name, length(first_name), 1))=upper('k');
+
+-- 현재 시간 표현. --
+select to_char(sysdate, 'yyyy/mm/dd hh24:mi:ss') from dual;
+select floor(sysdate-to_date('2024/11/04', 'yyyy/mm/dd')) from dual;    /* date, timeStamp 자료형에 구애받지 않기! */
+
+-- 원하는 형식으로 숫자 출력하기. --
+select to_char(1234567.23, 'l999,999,999.999') from dual;
+select trim(to_char(1234567.23, 'l999,999,999.999')) as money from dual;
+select first_name, trim(to_char(salary, 'l999,999,999,999.99')) as salary from employees;
+
+-- 문자 + 문자 = 숫자 --
+select '10,000'+'20,000' from dual; /* 변환 필요. 실행X */
+select to_number('10,000', '999,999') + to_number('20,000', '999,999') from dual;
+
+-- NVL TEST --
+select first_name, salary, commission_pct, job_id from employees;
+select first_name, salary, nvl(commission_pct, 0), job_id from employees;
+
+-- NVL2 TEST --
+select first_name, salary, commission_pct, salary+(salary*commission_pct) as total from employees;
+select first_name, salary, commission_pct, salary+(salary*nvl(commission_pct, 0)) as total from employees;
+select first_name, salary, commission_pct, salary+(salary*nvl2(commission_pct, commission_pct, 0)) as total from employees;
+
+
