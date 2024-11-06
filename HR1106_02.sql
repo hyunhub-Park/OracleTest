@@ -2,7 +2,7 @@
 -- ch 21 --
 create table IT -- INSERT_TEST --
 (
-    NO1 NUMBER,
+    NO1 NUMBER,                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                
     NO2 NUMBER,
     NO3 NUMBER
 );
