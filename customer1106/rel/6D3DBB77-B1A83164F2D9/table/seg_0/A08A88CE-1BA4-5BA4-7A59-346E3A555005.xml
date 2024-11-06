@@ -1,0 +1,77 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A08A88CE-1BA4-5BA4-7A59-346E3A555005" schemaObject="E0459B8C-DA9C-3B9D-9E0E-B2BAE0D3B0E5" name="REGIONS">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REGIONS</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>D9A40052-4C25-8615-85EC-6CBAB2FF9FD9</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="REGION_ID" id="9269EFD6-D380-3E68-C8C9-757CB39428B8">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>63272992-3F3C-EB27-6548-CCC48FA7E871</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<notNullConstraintName>REGION_ID_NN</notNullConstraintName>
+</Column>
+<Column name="REGION_NAME" id="C4930B99-8D2C-54D0-E43E-F9C7E846A180">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>REGIONS</sourceObjSchema>
+<sourceObjName>REGION_NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>946C96B1-AD91-4C36-8C13-533088797C0B</importedID>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>25 BYTE</dataTypeSize>
+<ownDataTypeParameters>25 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="BE7A1794-930F-0FC5-0142-7D93C1FBB618" name="REG_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>3C32C2D7-4DB2-E763-5174-82E216F27AB4</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9269EFD6-D380-3E68-C8C9-757CB39428B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B16114A3-180A-338C-35E0-9023724D947F" schemaObject="E0459B8C-DA9C-3B9D-9E0E-B2BAE0D3B0E5" name="REG_ID_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>REG_ID_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>017F08B8-0552-4914-880D-60626BBBAFD6</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9269EFD6-D380-3E68-C8C9-757CB39428B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
