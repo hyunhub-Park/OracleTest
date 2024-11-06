@@ -4,5 +4,12 @@
 <createdTime>2024-11-06 06:03:50 UTC</createdTime>
 <ownerDesignName>customer1106</ownerDesignName>
 <shouldBeOpen>false</shouldBeOpen>
-<selectedRDBMSSite>32076570-2523-435C-2E92-BF29817DFF70</selectedRDBMSSite>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>로컬-HR</connName>
+<connUser>HR</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
 </relationalModel>
