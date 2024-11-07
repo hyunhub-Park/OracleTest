@@ -140,6 +140,7 @@ ALTER TABLE MEMBER ADD CONSTRAINT MEMBER01_DEPT_NO_FK
 
 
 -- 1107 과제. --
+/* 1번 */
 CREATE TABLE EMP001
 (
     no NUMBER(4), --pk--
@@ -147,7 +148,124 @@ CREATE TABLE EMP001
     job VARCHAR(9),
     manager_no NUMBER(4),
     hire_date date NOT NULL,
-    salary NUMBER(7, 2),
-    commission NUMBER(7, 2),
-    department_no NUMBER(2)
+    salary NUMBER(7, 2) NOT NULL,
+    commission NUMBER(7, 2) default 0.0,
+    department_no NUMBER(2) NOT NULL
 );
+
+ALTER TABLE EMP001 ADD CONSTRAINT EMP001_no_PK PRIMARY KEY(no);
+
+/* 2번 */
+INSERT INTO EMP001 VALUES(7369, 'SMITH', 'CLEAK', 7836, '80/12/17', 800, 0.0, 10);
+INSERT INTO EMP001 VALUES(7499, 'ALLEN', 'SALESMAN', 7369, '87/12/20', 1600, 300, 30);
+INSERT INTO EMP001 VALUES(7839, 'KING', 'PRESIDENT', null, '81/02/08', 5000, null, 10);
+
+select * from emp001;
+
+select * from user_constraints where table_name='EMP001';
+
+/* 3번 */
+CREATE TABLE MEMBERS
+(
+    id VARCHAR2(20),    --pk--
+    name VARCHAR2(20) not null,
+    region VARCHAR2(13) not null,
+    phone VARCHAR2(13) not null,    --uk--
+    address VARCHAR2(100) not null
+);
+
+ALTER TABLE MEMBERS ADD CONSTRAINT MEMBERS_id_PK PRIMARY KEY(id);
+ALTER TABLE MEMBERS ADD CONSTRAINT MEMBERS_phone_uk UNIQUE(phone);
+
+INSERT INTO MEMBERS VALUES('id001', '김주민', '서울', '010-0000-0001', 'A구');
+INSERT INTO MEMBERS VALUES('id002', '박주민', '서울', '010-0000-0002', 'B구');
+select * from members;
+
+select * from user_constraints where table_name='MEMBERS';
+
+/* 4번 */
+create table BOOKS
+(
+    code NUMBER(4), --pk--
+    title VARCHAR2(50) not null,
+    count NUMBER(6) not null,
+    price NUMBER(10) not null,
+    publish VARCHAR2(50) not null
+);
+
+ALTER TABLE BOOKS ADD CONSTRAINT BOOKS_code_PK PRIMARY KEY(code);
+
+INSERT INTO BOOKS VALUES(1000, '가나다책', 1, 12000, '대한출판');
+INSERT INTO BOOKS VALUES(1001, '라마바책', 2, 15000, '민국출판');
+select * from books;
+
+select * from user_constraints where table_name='BOOKS';
+
+/* 5번 */
+CREATE TABLE v_gogek
+(
+    g_code NUMBER(5),
+    g_name VARCHAR2(20) not null,
+    g_age NUMBER(3) default 0,
+    g_addr VARCHAR2(50),
+    g_tel VARCHAR2(20)
+);
+
+ALTER TABLE v_gogek ADD CONSTRAINT v_gogek_g_code_PK PRIMARY KEY(g_code);
+
+INSERT INTO v_gogek VALUES(1000, '김고객', 25, '서울', '010-0000-0001');
+INSERT INTO v_gogek VALUES(1001, '박고객', 35, '경기', '010-0000-0002');
+INSERT INTO v_gogek VALUES(1002, '최고객', 47, '서울', '010-0000-0003');
+UPDATE v_gogek SET g_tel='010-0000-0001' WHERE g_name='김고객';
+UPDATE v_gogek SET g_tel='010-0000-0002' WHERE g_name='박고객';
+UPDATE v_gogek SET g_tel='010-0000-0003' WHERE g_name='최고객';
+
+select * from v_gogek;
+
+select * from user_constraints where table_name='v_gogek';
+
+create table video
+(
+    v_code NUMBER(5),
+    v_title VARCHAR2(50) NOT NULL,
+    v_genre VARCHAR2(30),
+    v_pay NUMBER(7) NOT NULL,
+    v_lend_state NUMBER(1),
+    v_make_company VARCHAR2(50),
+    v_make_date DATE,
+    v_view_age NUMBER(1)
+);
+
+ALTER TABLE VIDEO ADD CONSTRAINT video_v_code_PK PRIMARY KEY(v_code);
+INSERT INTO video VALUES(00100, '비디오1', '호러', 10000, 1, '대한영화사', '24/11/07', 5);
+INSERT INTO video VALUES(00101, '비디오2', '로맨스', 8000, 2, '민국영화사', '24/11/06', 3);
+INSERT INTO video VALUES(00102, '비디오3', '호러', 9000, 1, '민국영화사', '24/11/05', 5);
+select * from video;
+
+select * from user_constraints where table_name='video';
+
+create table lend_return
+(
+    lr_code NUMBER(5), --pk--
+    g_code NUMBER(5) not null, --fk--
+    v_code NUMBER(5) not null, --fk--
+    l_date DATE,
+    r_plan_date DATE,
+    l_total_pay NUMBER(7)
+);
+
+ALTER TABLE lend_return ADD CONSTRAINT lend_return_lr_code_PK PRIMARY KEY(lr_code);
+ALTER TABLE lend_return ADD CONSTRAINT lend_return_g_code_FK
+        FOREIGN KEY(g_code) REFERENCES v_gogek(g_code) ON DELETE CASCADE;
+ALTER TABLE lend_return ADD CONSTRAINT lend_return_v_code_FK
+        FOREIGN KEY(v_code) REFERENCES video(v_code) ON DELETE CASCADE; 
+
+INSERT INTO lend_return VALUES(111, 1000, 00100, '2024/11/08', '2024/11/15', 12000);
+INSERT INTO lend_return VALUES(121, 1001, 00101, '2024/11/12', '2024/11/19', 12000);
+INSERT INTO lend_return VALUES(150, 1001, 00101, '2024/11/12', '2024/11/19', 12000);
+
+INSERT INTO lend_return VALUES(131, 1080, 00101, '2024/11/12', '2024/11/19', 12000);    /* 무결성 제약조건 위배로 삽입 불가. */
+INSERT INTO lend_return VALUES(141, 1003, 00201, '2024/11/12', '2024/11/19', 12000);    /* 무결성 제약조건 위배로 삽입 불가. */
+select * from lend_return;
+
+select * from user_constraints where table_name='lend_return';
