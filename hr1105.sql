@@ -97,6 +97,10 @@ select * from tab;
  rename emp01 to emp02;
  select * from tab;
  
+ alter table emp01 add credate date;
+ select * from emp01;
+ desc emp01;
+ 
  create table customer
  ( /* constraint customer_gender_ck check(gender in('M', 'W')) */
     no char(7) not null,    /* pk */
@@ -134,8 +138,14 @@ create table GRADES
     ENG NUMBER(10) DEFAULT 0 NOT NULL,
     MATH NUMBER(10) DEFAULT 0 NOT NULL,
     TOTAL NUMBER(10) DEFAULT 0,
-    AVG NUMBER(10, 2) DEFAULT 0.0,
-    CODE NUMBER(10)
+    AVG NUMBER(10, 2) DEFAULT 0.0, 
+    CODE NUMBER(10) --fk 부모테이블의 pk or uk--
+);
+/*식별, 비식별 관계*/
+create table DEPARTMENT
+(
+    DEP_CODE NUMBER(10) NOT NULL, -- pk --
+    DEP_NAME VARCHAR2(30) NOT NULL
 );
 
 desc grades;
@@ -144,6 +154,10 @@ SELECT * FROM USER_CONSTRAINTS WHERE TABLE_NAME='GRADES';
 
 ALTER TABLE GRADES ADD CONSTRAINT GRADES_NO_PK PRIMARY KEY(NO);
 ALTER TABLE GRADES MODIFY CODE NUMBER(10) REFERENCES DEPARTMENT(DEP_CODE);  /* GRADES테이블의 CODE값은 DEPARTMENT의 학과코드를 참조한다. */
+
+
+ALTER TABLE GRADES ADD CONSTRAINT GRADES_DEPARTMENT_CODE_FK FOREIGN KEY(CODE) REFERENCES DEPARTMENT(DEP_CODE) ON DELETE CASCADE;
+
 ALTER TABLE GRADES MODIFY NAME CHAR(20);
 ALTER TABLE GRADES RENAME CONSTRAINT SYS_C007741 TO GRADES_CODE_RK;
 INSERT INTO GRADES(NO, NAME, KOR, ENG, MATH, TOTAL, AVG, CODE)
@@ -151,12 +165,6 @@ INSERT INTO GRADES(NO, NAME, KOR, ENG, MATH, TOTAL, AVG, CODE)
 INSERT INTO GRADES(NO, NAME, KOR, ENG, MATH, TOTAL, AVG, CODE)
         VALUES(20241106, '최학생', 85, 85, 90, 260, 86.7, 50); -- 학과코드 50은 DEPARTMENT 테이블에 없는 값으로 오류. --
 
-
-create table DEPARTMENT
-(
-    DEP_CODE NUMBER(10) NOT NULL, -- pk --
-    DEP_NAME VARCHAR2(30) NOT NULL
-);
 
 desc department;
 select * from DEPARTMENT;
@@ -185,6 +193,31 @@ SELECT DEP_CODE as 학과코드, DEP_NAME as 학과명 FROM DEPARTMENT;
 샘플데이터 입력 :
 select 한 결과를 보여주시면 됩니다.*/
 
+/* 부서별에 따라 급여를 인상하도록 하자. (Join - inner join, outer join, self join, cross join) */
+select table_name from user_tables;
 
+select * from departments;
+select employee_id, first_name, salary, department_id from employees;
+select * from employees inner join departments on employees.department_id=departments.department_id;
+                            /* department_id로만 실행 시, id가 2개 이므로 열의 정의가 애매하다는 오류가 뜸. */
+/*select employee_id, first_name, job_id, salary, employees.department_id, department_name*/
+
+/* decode로도 작성해보기. */
+select employee_id, first_name, job_id, salary, E.department_id, D.department_name
+        case 
+            when upper(D.department_name = upper('Marketing') then salary*1.05
+            when upper(D.department_name = upper('Purchasing') then salary*1.10
+            when upper(D.department_name = upper('Human Resources') then salary*1.15
+            when upper(D.department_name = upper('IT') then salary*1.20
+            end NEWSALARY
+from employees E inner join departments D on E.department_id=D.department_id
+where upper(D.department_name) in(upper('Marketing'),upper('Purchasing'),upper('Human Resources'),upper('IT'))
+order by NEWSALARY DESC;
+
+select employee_id, salary, job_id, A.department_id, B.depratmenr_name,
+        case when e.department_name='Marketing' then salary*1.05
+            when b.department_name='Purchasing' then dalary*1.15
+            when b.department_name='Human Resources' then salary*1.15;
+            when departmnet_name='IT' then salary*1.20
  
  
