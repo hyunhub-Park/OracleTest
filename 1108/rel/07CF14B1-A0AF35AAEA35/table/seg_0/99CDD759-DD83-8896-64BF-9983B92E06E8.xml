@@ -1,0 +1,160 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="99CDD759-DD83-8896-64BF-9983B92E06E8" schemaObject="98CC284F-9578-CA6F-51C9-83AF7FDDB3F6" name="LEND_RETURN">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LEND_RETURN</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:13 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="LR_CODE" id="DBDFF8AB-606F-41A6-70AD-9BB6B32AB864">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>LR_CODE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="G_CODE" id="3E07BEC1-D362-95AD-1F5D-7466334A1621">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>G_CODE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="448C0CE6-F256-B047-6068-204861CD4DE5" referredColumn="49D7582C-8D2A-7872-8112-9F48D376C173"/>
+</associations>
+</Column>
+<Column name="V_CODE" id="DAF672F5-21AB-C83D-FFC6-215061614DC2">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>V_CODE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5F07657B-7DDF-8437-9CA3-7F15FC926C86" referredColumn="676B2B75-5883-4BE1-B189-0C8282BB37FC"/>
+</associations>
+</Column>
+<Column name="L_DATE" id="FF42F8CD-83D8-3C0E-4D41-8EEC275F3E0B">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>L_DATE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="R_PLAN_DATE" id="8BD83D9A-FE81-D38C-F8A2-123DD113F1A9">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>R_PLAN_DATE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="L_TOTAL_PAY" id="B6BE8BD8-4DC1-07D3-794C-09FF74F750D1">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LEND_RETURN</sourceObjSchema>
+<sourceObjName>L_TOTAL_PAY</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2D68AF3C-8A25-1521-0F05-74BC3440EEA1" name="LEND_RETURN_LR_CODE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LEND_RETURN_LR_CODE_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:24 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBDFF8AB-606F-41A6-70AD-9BB6B32AB864"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CA1E4B95-5D44-2F36-BC4D-2BE8F65E5E27" schemaObject="98CC284F-9578-CA6F-51C9-83AF7FDDB3F6" name="LEND_RETURN_LR_CODE_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LEND_RETURN_LR_CODE_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:23 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DBDFF8AB-606F-41A6-70AD-9BB6B32AB864"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="46456B76-442D-B4BF-C05F-B00CB0668DB9" name="LEND_RETURN_G_CODE_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:26 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E07BEC1-D362-95AD-1F5D-7466334A1621"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F95DDC6D-543C-9F47-A7D4-1BB33DCA2B3B" name="LEND_RETURN_V_CODE_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:26 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DAF672F5-21AB-C83D-FFC6-215061614DC2"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
