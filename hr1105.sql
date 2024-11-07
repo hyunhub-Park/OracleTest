@@ -197,27 +197,43 @@ select 한 결과를 보여주시면 됩니다.*/
 select table_name from user_tables;
 
 select * from departments;
+select * from employees;
 select employee_id, first_name, salary, department_id from employees;
+
 select * from employees inner join departments on employees.department_id=departments.department_id;
                             /* department_id로만 실행 시, id가 2개 이므로 열의 정의가 애매하다는 오류가 뜸. */
 /*select employee_id, first_name, job_id, salary, employees.department_id, department_name*/
-
-/* decode로도 작성해보기. */
-select employee_id, first_name, job_id, salary, E.department_id, D.department_name
-        case 
-            when upper(D.department_name = upper('Marketing') then salary*1.05
-            when upper(D.department_name = upper('Purchasing') then salary*1.10
-            when upper(D.department_name = upper('Human Resources') then salary*1.15
-            when upper(D.department_name = upper('IT') then salary*1.20
+                                            -- E, D는 그냥 주면 되는건가...? --
+select employee_id, first_name, job_id, salary, E.department_id, D.department_name,
+        case
+            when upper(D.department_name) = upper('Marketing') then salary*1.05
+            when upper(D.department_name) = upper('Purchasing') then salary*1.10
+            when upper(D.department_name) = upper('Human Resources') then salary*1.15
+            when upper(D.department_name) = upper('IT') then salary*1.20
             end NEWSALARY
 from employees E inner join departments D on E.department_id=D.department_id
 where upper(D.department_name) in(upper('Marketing'),upper('Purchasing'),upper('Human Resources'),upper('IT'))
 order by NEWSALARY DESC;
 
-select employee_id, salary, job_id, A.department_id, B.depratmenr_name,
+/* decode로 작성. */
+/*select employee_id, first_name, E.department_id, salary,
+        decode (upper(D.department_name), upper('Marketing'), salary*1.05,
+                upper('Purchasing'), salary*1.1,
+                upper('Human Resources'), salary*1.15,
+                upper('IT'), salary*1.2) as salary_result
+from departments D inner join employees E on E.department_id=D.department_id
+where upper(D.department_name) in (upper('Marketing'), upper('Purchasing'),
+        upper('Human Resources'), upper('IT')) order by salary_result DESC;*/
+        
+/*select employee_id, first_name, E.department_id, salary,
+        decode(upper(D.department_name),upper('Marketing'), salary*1.05, upper('Purchasing'), salary*1.1, 
+        upper('Human Resources'), salary*1.15, upper('IT'), salary*1.2) as salary2
+from departments D inner join employees E on E.department_id = D.department_id
+where upper(D.department_name) in (upper('Marketing'),upper('Purchasing'),upper('Human Resources'),upper('IT'))
+order by salary2 DESC;*/
+
+/* select employee_id, salary, job_id, A.department_id, B.depratmenr_name,
         case when e.department_name='Marketing' then salary*1.05
             when b.department_name='Purchasing' then dalary*1.15
             when b.department_name='Human Resources' then salary*1.15;
-            when departmnet_name='IT' then salary*1.20
- 
- 
+            when departmnet_name='IT' then salary*1.20 */
