@@ -56,27 +56,18 @@ ALTER TABLE trainee ADD CONSTRAINT trainee_lesson_num_FK FOREIGN KEY(lesson_num)
             REFERENCES lesson(lesson_num) ON DELETE CASCADE;
             
 
-SELECT * FROM lesson INNER JOIN trainee ON lesson.lesson_num=trainee.lesson_num;
-SELECT * FROM case
-                when lesson.lesson_num = 'K' then section='culture';
-                when lesson.lesson_num = 'M' then section='culture';
-                when lesson.lesson_num = 'E' then section='culture';
-                when lesson.lesson_num = 'H' then section='culture';
-                when lesson.lesson_num = 'P' then section='major';
-                when lesson.lesson_num = 'D' then section='major';
-                when lesson.lesson_num = 'ED' then section='major';
-                when lesson.lesson_num = 'etc' then section='minor';
-                END TRAINEE_SECTION
+/*SELECT * FROM lesson INNER JOIN trainee ON lesson.lesson_num=trainee.lesson_num;
+SELECT T.lesson_num, L.lesson_num, 
+    case
+            when lesson.lesson_num = 'K' then section='culture'
+            when lesson.lesson_num = 'M' then section='culture'
+            when lesson.lesson_num = 'E' then section='culture'
+            when lesson.lesson_num = 'H' then section='culture'
+            when lesson.lesson_num = 'P' then section='major'
+            when lesson.lesson_num = 'D' then section='major'
+            when lesson.lesson_num = 'ED' then section='major'
+            when lesson.lesson_num = 'etc' then section='minor'
+            END TRAINEE_SECTION
 FROM trainee T inner join lesson L on L.lesson_num=T.lesson_num
-WHERE T.lesson_num in ('K', 'M', 'E', 'H'
-
-select employee_id, first_name, job_id, salary, E.department_id, D.department_name,
-        case
-            when upper(D.department_name) = upper('Marketing') then salary*1.05
-            when upper(D.department_name) = upper('Purchasing') then salary*1.10
-            when upper(D.department_name) = upper('Human Resources') then salary*1.15
-            when upper(D.department_name) = upper('IT') then salary*1.20
-            end NEWSALARY
-from employees E inner join departments D on E.department_id=D.department_id
-where upper(D.department_name) in(upper('Marketing'),upper('Purchasing'),upper('Human Resources'),upper('IT'))
-order by NEWSALARY DESC;
+WHERE T.lesson_num in ('K', 'M', 'E', 'H', 'P', 'D', 'ED', 'etc')
+ORDER BY TRAINEE_SECTION;*/
