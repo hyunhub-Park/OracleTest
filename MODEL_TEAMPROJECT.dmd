@@ -5,4 +5,15 @@
 <ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
 <capitalNames>false</capitalNames>
 <designId>4D594AE4-0E86-B900-B9A4-47D67AADCB4A</designId>
+<usedDesignStorageDescriptors>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="8E9E0D9D-8E06-B1A6-17F4-69EF5FAE5E73">
+<designStoragePath>D:\OracleTest</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="68524A73-838E-DA77-D35B-56FF3FE0933B">
+<designStoragePath>D:\OracleTest</designStoragePath>
+</designDescr>
+<designDescr class="oracle.dbtools.crest.model.design.Design$DesignStorageDesc" id="5694505E-AC29-2E72-2E71-B068AD8D99B4">
+<designStoragePath>D:\OracleTest</designStoragePath>
+</designDescr>
+</usedDesignStorageDescriptors>
 </OSDM_Design>
