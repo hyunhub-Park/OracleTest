@@ -1,0 +1,137 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A5022113-837E-312B-141D-54917BE36BF5" schemaObject="6C9B9E74-79DC-95F7-95BF-50FBF1AA2529" name="BUY">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>BUY</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>ABFDFDD9-7A0D-FFA1-0895-569F78773ADC</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="A23329C5-5855-EB95-B638-EB0E6FAFE84A">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>BUY</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>A89BBE66-4F2B-09B1-7D85-D110BE5C99FA</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>10</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,10,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="MOBILE" id="5FC6C6FD-4A7A-F008-7DC8-0126258E40CA">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>BUY</sourceObjSchema>
+<sourceObjName>MOBILE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>4F8300E5-C0C7-DE24-EB31-7A613F774B89</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="690B5027-8CF2-1D38-C8CD-CD7E9A0D3FDC" referredColumn="9C812F78-2EE6-1CC8-FC22-0322CFFD0F5D"/>
+</associations>
+</Column>
+<Column name="PRODUCTNAME" id="C675DEB8-8DA6-3C79-DD19-2879DF49D1B4">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>BUY</sourceObjSchema>
+<sourceObjName>PRODUCTNAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>F221047A-7F73-3845-D31F-4C9AC6DAF6C5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 CHAR</dataTypeSize>
+<ownDataTypeParameters>3 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="4E668511-BF79-E4D0-743D-40C8ED9924EF">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>BUY</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>7498D972-AEB4-A269-69E8-EFDEA3CE5631</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="AMOUNT" id="CB368FA7-063D-E647-D144-56490CFEF366">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>BUY</sourceObjSchema>
+<sourceObjName>AMOUNT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>9D7AFA83-B2B3-596A-A751-5BA52443755B</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="41536638-0AED-132C-4291-AD68B49E0154" name="BUY_PK">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>BUY_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>0040F0F8-0E09-885F-B837-DAA44D22D7C9</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A23329C5-5855-EB95-B638-EB0E6FAFE84A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F1A7F3D8-1294-062D-A5F1-0E38E3CDC633" schemaObject="6C9B9E74-79DC-95F7-95BF-50FBF1AA2529" name="BUY_PK">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>BUY_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>78D3B894-EFF6-8A81-726B-D008D0FCABD1</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A23329C5-5855-EB95-B638-EB0E6FAFE84A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="08A0876F-5082-C2A3-FB0F-95DA3AEF1278" name="BUY_USER_MOBILE_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="5FC6C6FD-4A7A-F008-7DC8-0126258E40CA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

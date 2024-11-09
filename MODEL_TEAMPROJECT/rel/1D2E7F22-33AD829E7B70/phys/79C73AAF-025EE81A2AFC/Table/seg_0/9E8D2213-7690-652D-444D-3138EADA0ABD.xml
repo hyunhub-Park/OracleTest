@@ -1,0 +1,51 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CUSTOMER" directorySegmentName="seg_0" id="9E8D2213-7690-652D-444D-3138EADA0ABD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="0B7C0A9F-9D96-C105-1E3A-5DBFFAC2730B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="48C035C3-FC90-A612-DFA9-78062AE1457E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE" id="90305BC2-FEC9-D959-E63A-E6C995626AC6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="A6A00DC2-4626-6E5A-E067-DED71E6F3F41">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="ACB7A7DF-2E12-AD6A-15A4-F92BCBF9B4AE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PWD" id="E56A5AFF-D98B-895F-D227-216B7F6A2694">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUSTOMER_PK" id="710A0D82-55EC-807B-7DDC-E63BAE36D6AB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

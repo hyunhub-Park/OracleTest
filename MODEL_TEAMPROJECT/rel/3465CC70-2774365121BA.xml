@@ -1,0 +1,15 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<relationalModel class="oracle.dbtools.crest.model.design.relational.RelationalDesign" name="로컬-TEAMPROJECT_01" id="3465CC70-50F1-E799-5C03-2774365121BA" mainViewID="22EA9DCC-2EEA-E4F9-DADC-E58A073F233A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:50 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+<selectedRDBMSSite>79C73AAF-E1A7-E669-7DF0-025EE81A2AFC</selectedRDBMSSite>
+<importConnectionStamps>
+<importConnectionStamp class="oracle.dbtools.crest.imports.DBConnectionStamp">
+<connName>로컬-TEAMPROJECT_01</connName>
+<connUser>TEAMPROJECT_01</connUser>
+<connType>1</connType>
+</importConnectionStamp>
+</importConnectionStamps>
+</relationalModel>

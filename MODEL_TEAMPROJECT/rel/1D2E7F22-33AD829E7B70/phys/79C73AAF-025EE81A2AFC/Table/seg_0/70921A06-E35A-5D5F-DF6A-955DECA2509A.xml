@@ -1,0 +1,83 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="BUY" directorySegmentName="seg_0" id="70921A06-E35A-5D5F-DF6A-955DECA2509A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COMPANY_CODE" id="259A028F-C279-65D0-0B5F-8C2F6BCEDE18">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_CODE1" id="26A95CF0-46C4-D32A-8F49-3D4C01E18DED">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="29633A76-69E8-1C31-2ACE-7A3D8ACED79A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CUSTOMER_CODE" id="46262A1B-D92A-E5C4-BFAA-E1DAE0DBC220">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AMOUNT" id="7192D2AB-F0E8-39FC-A2DE-8CF58C160755">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="COMPANY_CODE1" id="74F57F85-ABDF-2AB6-AE8C-CD12523D9356">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_CODE1" id="7985AF2F-861C-19B6-B5BF-46E705539ACE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="TOTAL" id="AE103C69-45E5-E141-6541-82E519346009">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRODUCT_CODE" id="C3CDAED8-1D65-E33F-B8FF-D779A015A148">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BUY_CUSTOMER_CODE_FK" id="41ADD95B-9C79-1D10-560F-93582368EFCE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BUY_PRODUCT_CODE_FK" id="7A7D0ED1-E368-8AC1-0064-89D2D9343692">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ForeignKey>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="BUY_COMPANY_CODE_FK" id="A88C2224-4C68-A170-EF67-4058228A8EFA">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="BUY_PK" id="5D215B91-6598-E6E7-AFFD-EA35215AEBEB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="690B5027-8CF2-1D38-C8CD-CD7E9A0D3FDC" containerWithKeyObject="A5022113-837E-312B-141D-54917BE36BF5" localFKIndex="08A0876F-5082-C2A3-FB0F-95DA3AEF1278" name="BUY_USER_MOBILE_FK">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>BUY_USER_MOBILE_FK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>22B7E47C-4F62-909F-AF9F-DFA63F2415C3</importedID>
+<referredTableLongName>SHOPPINGMALL.USERDB</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>EC3CD912-9404-3C14-2529-9A14FD00EA1B</referredTableID>
+<keyObject>9679B16A-4683-244F-7426-0BE522413B81</keyObject>
+<referredKeyID>9679B16A-4683-244F-7426-0BE522413B81</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>MOBILE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

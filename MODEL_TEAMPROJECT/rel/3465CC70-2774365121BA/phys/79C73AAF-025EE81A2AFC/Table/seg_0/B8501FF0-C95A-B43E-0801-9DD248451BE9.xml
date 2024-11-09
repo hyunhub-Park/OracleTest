@@ -1,0 +1,81 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="PRODUCT" directorySegmentName="seg_0" id="B8501FF0-C95A-B43E-0801-9DD248451BE9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>6C6F33F6-18A9-E5B9-68C5-17D334A9A620</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>3AB3D447-5FD6-C028-1554-A30FC4407C2B</segment>
+<tableSpace>E767A7E9-B928-B4CF-7C10-517519822C94</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NAME" id="26805502-6320-02EE-C887-4D59949FB9A2">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="42DB6E9B-EA47-DFC3-C670-1AD74FB93A28">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PRICE" id="8A7D7B6D-63F8-C661-B2D3-10BE036AA592">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="REMAIN" id="EFF4B5DF-5A69-F2BB-E920-2518B3722920">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PRODUCT_PK" id="36C6B36B-3F21-8AFC-3952-1F9894C7D86B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>6C6F33F6-18A9-E5B9-68C5-17D334A9A620</schemaObject>
+<segment>D31BDAAF-0592-5971-8907-FE0631C158CA</segment>
+<tableSpace>E767A7E9-B928-B4CF-7C10-517519822C94</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="PTODUCT_UK" id="4A7B4A8F-85B8-2B69-345B-380EA9C53490">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>6C6F33F6-18A9-E5B9-68C5-17D334A9A620</schemaObject>
+<segment>D31BDAAF-0592-5971-8907-FE0631C158CA</segment>
+<tableSpace>E767A7E9-B928-B4CF-7C10-517519822C94</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="PRODUCT_PK" id="6146C627-9AA3-3BB6-2ACE-BF8A5DBCC013">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<segment>D31BDAAF-0592-5971-8907-FE0631C158CA</segment>
+<tableSpace>E767A7E9-B928-B4CF-7C10-517519822C94</tableSpace>
+<existingIndex>36C6B36B-3F21-8AFC-3952-1F9894C7D86B</existingIndex>
+<indexSegment>D31BDAAF-0592-5971-8907-FE0631C158CA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="PTODUCT_UK" id="9B6298FE-FEF2-D187-403B-EF22928DF3DD">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:39:52 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<segment>D31BDAAF-0592-5971-8907-FE0631C158CA</segment>
+<tableSpace>E767A7E9-B928-B4CF-7C10-517519822C94</tableSpace>
+<existingIndex>4A7B4A8F-85B8-2B69-345B-380EA9C53490</existingIndex>
+<indexSegment>D31BDAAF-0592-5971-8907-FE0631C158CA</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

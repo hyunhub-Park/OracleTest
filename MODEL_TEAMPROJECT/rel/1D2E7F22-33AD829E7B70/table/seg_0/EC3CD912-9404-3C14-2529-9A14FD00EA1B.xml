@@ -1,0 +1,107 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EC3CD912-9404-3C14-2529-9A14FD00EA1B" schemaObject="6C9B9E74-79DC-95F7-95BF-50FBF1AA2529" name="USERDB">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>USERDB</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>977B796A-00ED-DE62-5C9B-3575E792D097</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MOBILE" id="9C812F78-2EE6-1CC8-FC22-0322CFFD0F5D">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>USERDB</sourceObjSchema>
+<sourceObjName>MOBILE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>E972D525-49CB-C63D-13A6-17C10332705D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="89A50E9C-0874-45C0-3DB2-7FDD9A215CF5">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>USERDB</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>8BAD4838-1153-0998-BC14-5B27D7D40D57</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHYEAR" id="54DCFB3E-8E48-7840-698C-DF11193CB4A6">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>USERDB</sourceObjSchema>
+<sourceObjName>BIRTHYEAR</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>A5B73AC4-20CF-92FC-5530-FF2DEC95FEDB</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,4,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="745EC7A9-EA93-8100-B8F4-52E496EA7205">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>USERDB</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>EAA0C29E-AD75-DDAC-AC02-17BFE62869A5</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9679B16A-4683-244F-7426-0BE522413B81" name="USER_PK">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>USER_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>E3A39CF4-8B00-4B15-000A-692F63BF42FB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C812F78-2EE6-1CC8-FC22-0322CFFD0F5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E10FC246-C13D-81FA-5AB7-6EE2CF552C41" schemaObject="6C9B9E74-79DC-95F7-95BF-50FBF1AA2529" name="USER_PK">
+<sourceConnName>로컬-SHOPPINGMALL</sourceConnName>
+<sourceObjSchema>SHOPPINGMALL</sourceObjSchema>
+<sourceObjName>USER_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>BC30824C-B59B-41E9-1D8D-832CBA04AFED</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9C812F78-2EE6-1CC8-FC22-0322CFFD0F5D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
