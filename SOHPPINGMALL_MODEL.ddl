@@ -19,18 +19,18 @@ CREATE TABLE buy (
 
 ALTER TABLE buy ADD CONSTRAINT buy_pk PRIMARY KEY ( no );
 
-CREATE TABLE "USER" (
+CREATE TABLE USERDB (
     mobile    CHAR(11 CHAR) NOT NULL,
     name      CHAR(4 CHAR) NOT NULL,
     birthyear NUMBER(4) NOT NULL,
     address   VARCHAR2(40 CHAR) NOT NULL
 );
 
-ALTER TABLE "USER" ADD CONSTRAINT user_pk PRIMARY KEY ( mobile );
+ALTER TABLE USERDB ADD CONSTRAINT user_pk PRIMARY KEY ( mobile );
 
 ALTER TABLE buy
     ADD CONSTRAINT buy_user_mobile_fk FOREIGN KEY ( mobile )
-        REFERENCES "USER" ( mobile )
+        REFERENCES USERDB ( mobile )
             ON DELETE CASCADE;
 
 
