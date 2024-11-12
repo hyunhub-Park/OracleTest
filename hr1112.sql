@@ -171,7 +171,7 @@ SELECT * FROM EX01 WHERE EXISTS (SELECT * FROM departments WHERE department_name
 
 -- ÀüÃ¼. --
 SELECT * FROM EX01 WHERE job_id=(SELECT job_id FROM EX01 WHERE first_name='Valli')
-AND salary = (SELECT salary FROM EX01 WHERE first_name='Valli')
+AND salary=(SELECT salary FROM EX01 WHERE first_name='Valli')
 and first_name <> 'Valli';
 
 
@@ -185,3 +185,44 @@ SELECT department_id FROM EX01 WHERE first_name='Valli';
 SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=60;
 -- SELECT * FROM EX01 WHERE salary > (SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=60); --
 SELECT * FROM EX01 WHERE salary > (SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=(SELECT department_id FROM EX01 WHERE first_name='Valli'));
+
+select * from employees where last_name='Tucker';
+
+select * from employees;
+
+SELECT first_name, last_name, salary AS "Name" FROM employees WHERE last_name='Tucker';
+SELECT first_name, last_name AS Name, job_id, salary FROM employees WHERE salary > (SELECT salary FROM employees WHERE last_name='Tucker');
+
+SELECT first_name, last_name AS Name, salary, hire_date, job_id FROM employees
+WHERE (job_id, salary) IN(SELECT job_id, MIN(salary) FROM employees GROUP BY job_id)
+ORDER BY job_id asc;
+
+select AVG(salary) from employees where job_id='FI_ACCOUNT';
+select salary, first_name from employees where job_id='FI_ACCOUNT';
+
+select AVG(salary) from employees where job_id='SA_MAN';
+select salary, first_name from employees where job_id='SA_MAN';
+
+SELECT first_name, last_name AS Name, salary, department_id, job_id FROM employees E
+WHERE E.salary > (SELECT AVG(salary) FROM employees WHERE department_id=E.department_id)
+ORDER BY job_id;
+
+select * from departments;
+select salary, first_name from employees;
+
+
+
+select CONCAT(CONCAT(e.first_name, ' '), e.last_name) "Name", e.salary, 
+    e.department_id, e.job_id
+from employees e
+where salary > (select AVG(salary)
+                from employees
+                where department_id = e.department_id
+                group by e.department_id);
+                
+                
+SELECT first_name, last_name AS Name, job_id, salary, department_id, ROUND((SELECT AVG(salary)
+FROM employees
+WHERE department_id=E.department_id)) AS "Department Avg Salary" FROM employees E
+ORDER BY job_id;
+
