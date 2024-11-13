@@ -1,0 +1,20 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="DF908E7B-73A6-3901-8C67-019F5B4D7432" containerWithKeyObject="3D58C37A-8A54-F873-4702-D2CCCAF9AD59" localFKIndex="32FFCB3F-9C7C-4A9E-0A26-F97642E1879A" name="COUNTR_REG_FK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>COUNTR_REG_FK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:43:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<importedID>2127EEE1-C861-65E6-2DA7-F126A9F87889</importedID>
+<referredTableLongName>HR.REGIONS</referredTableLongName>
+<deleteRule>NO ACTION</deleteRule>
+<referredTableID>A08A88CE-1BA4-5BA4-7A59-346E3A555005</referredTableID>
+<keyObject>BE7A1794-930F-0FC5-0142-7D93C1FBB618</keyObject>
+<referredKeyID>BE7A1794-930F-0FC5-0142-7D93C1FBB618</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>REGION_ID</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,60 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="USERDB" directorySegmentName="seg_0" id="EC3CD912-9404-3C14-2529-9A14FD00EA1B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>6C9B9E74-79DC-95F7-95BF-50FBF1AA2529</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1D1E1289-C833-5C16-5DDF-13227BDF4B0E</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="BIRTHYEAR" id="54DCFB3E-8E48-7840-698C-DF11193CB4A6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="745EC7A9-EA93-8100-B8F4-52E496EA7205">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="89A50E9C-0874-45C0-3DB2-7FDD9A215CF5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="MOBILE" id="9C812F78-2EE6-1CC8-FC22-0322CFFD0F5D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="USER_PK" id="E10FC246-C13D-81FA-5AB7-6EE2CF552C41">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>6C9B9E74-79DC-95F7-95BF-50FBF1AA2529</schemaObject>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="USER_PK" id="9679B16A-4683-244F-7426-0BE522413B81">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:40 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+<existingIndex>E10FC246-C13D-81FA-5AB7-6EE2CF552C41</existingIndex>
+<indexSegment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

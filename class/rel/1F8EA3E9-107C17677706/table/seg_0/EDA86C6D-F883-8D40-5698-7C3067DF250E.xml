@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="EDA86C6D-F883-8D40-5698-7C3067DF250E" schemaObject="447A9599-1CCF-CB39-6C10-1922E35BE3F7" name="LESSON">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LESSON</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>D32DBEB5-88AD-912F-D879-5E7F9F9B80D8</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="52183359-1EEE-D15F-0677-8E8F7379EAC3">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LESSON</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>E3A0E4D8-2DAC-3FC9-E91E-3B18005A952A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="LESSON_NUM" id="34251A8A-C72F-8F51-C02E-F60B2E8DBEF4">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LESSON</sourceObjSchema>
+<sourceObjName>LESSON_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>3F65AB59-EA31-411F-2F61-9D8791436D3D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="9DA0BFF7-E8A7-EDA8-CE54-A419C3D75CAF">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>LESSON</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>718CBB58-F302-46A7-2252-53A904038614</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3D2129D7-B91D-953B-3518-1275066C94B1" name="LESSON_LESSON_NUM_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LESSON_LESSON_NUM_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>E0C98B4D-1EA7-EC63-4644-5060E30534CB</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34251A8A-C72F-8F51-C02E-F60B2E8DBEF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="678E7C0D-8AC7-06AC-6F08-AA10631F0255" schemaObject="447A9599-1CCF-CB39-6C10-1922E35BE3F7" name="LESSON_LESSON_NUM_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LESSON_LESSON_NUM_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>555687AF-EFCC-1E57-536D-D96EDF02105A</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="34251A8A-C72F-8F51-C02E-F60B2E8DBEF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

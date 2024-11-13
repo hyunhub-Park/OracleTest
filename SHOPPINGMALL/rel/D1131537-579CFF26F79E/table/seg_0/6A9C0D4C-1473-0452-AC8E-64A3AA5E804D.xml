@@ -1,0 +1,69 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="6A9C0D4C-1473-0452-AC8E-64A3AA5E804D" name="USER">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:35:49 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="MOBILE" id="0E03E95F-59ED-C9FF-7A14-FA95C485827C">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:38:33 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>11 CHAR</dataTypeSize>
+<ownDataTypeParameters>11 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="4451AF25-5719-DA3A-F77D-2C4329C13D12">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:37:01 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>4 CHAR</dataTypeSize>
+<ownDataTypeParameters>4 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="BIRTHYEAR" id="F54AC5A5-8205-D2FD-8835-A579CD1F5DCB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:37:43 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<ownDataTypeParameters>,4,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="1FD6F6B1-385B-AF74-5B10-A62B3CD8DFB3">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:38:03 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 CHAR</dataTypeSize>
+<ownDataTypeParameters>40 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6AAD4864-0CBF-442F-B527-5544FDE761AB" name="USER_PK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 05:38:33 UTC</createdTime>
+<ownerDesignName>SHOPPINGMALL</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0E03E95F-59ED-C9FF-7A14-FA95C485827C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

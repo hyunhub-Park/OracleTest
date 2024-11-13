@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="448C0CE6-F256-B047-6068-204861CD4DE5" containerWithKeyObject="99CDD759-DD83-8896-64BF-9983B92E06E8" localFKIndex="46456B76-442D-B4BF-C05F-B00CB0668DB9" name="LEND_RETURN_G_CODE_FK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>LEND_RETURN_G_CODE_FK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:26 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<referredTableLongName>HR.V_GOGEK</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>939A63F8-156C-0005-BAE3-773CA96AD86D</referredTableID>
+<keyObject>9579C0D6-51E1-3A6B-E461-57D8DC832F74</keyObject>
+<referredKeyID>9579C0D6-51E1-3A6B-E461-57D8DC832F74</referredKeyID>
+<mandatory>true</mandatory>
+<refColNames>G_CODE</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

@@ -1,0 +1,36 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="COMPANY" directorySegmentName="seg_0" id="B6BEEC42-DF2A-6E73-4D34-0324D73C40E5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PRICE" id="6439E95B-CA4E-2D49-8D3E-C86E2C4ED497">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="95A0E2F9-DEBE-2E7E-CD1C-23B7D3FCE671">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="F022F049-3462-0B5B-5C87-275F29EA9276">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="COMPANY_PK" id="1A320489-FE04-92CE-A23B-0326B202B598">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:18:36 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<indexSort>SORTED</indexSort>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

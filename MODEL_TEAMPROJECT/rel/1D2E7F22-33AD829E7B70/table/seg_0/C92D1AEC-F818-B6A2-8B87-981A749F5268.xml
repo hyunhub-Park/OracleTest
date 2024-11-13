@@ -1,0 +1,136 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="C92D1AEC-F818-B6A2-8B87-981A749F5268" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="PRODUCT">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>PRODUCT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>2A8BC457-200B-56C1-4BD4-B481D3A7B51A</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODE" id="EE0E24BD-B3D7-C169-0F79-AF7F26FD40CF">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>6ADBD505-1C0B-54B7-33DB-6E53BA327D07</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="7A3BC0A1-FC70-16B0-851B-121F47193DD6">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>700381CA-4D12-8F8F-271C-07667B122879</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PRICE" id="F6511C7D-3086-C145-5455-22FA3D1BFF0F">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>PRICE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>50C996CE-F312-83CD-437B-9DAE70766201</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,7,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="REMAIN" id="F27053A2-2503-745E-6A4B-7117AB9DDF16">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>PRODUCT</sourceObjSchema>
+<sourceObjName>REMAIN</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>0AE38FD8-63C0-C7DE-D3B0-02248CD97FFC</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,3,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B685B51-4AA9-7733-D352-E11A38DB24B2" name="PRODUCT_PK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>PRODUCT_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>1D5EA883-8DC2-FFC9-3094-CA3ED921734C</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE0E24BD-B3D7-C169-0F79-AF7F26FD40CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="94BB66DC-B820-4593-CB21-A57BB3C14F5D" name="PTODUCT_UK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>PTODUCT_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>7BE693A2-8408-BA98-6E57-DB83542A86C6</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A3BC0A1-FC70-16B0-851B-121F47193DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="331E9CF0-2A9A-6D98-4A67-F88F3207A03E" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="PRODUCT_PK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>PRODUCT_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>0F495BED-FE3D-6F96-DEC1-9D243A309C85</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EE0E24BD-B3D7-C169-0F79-AF7F26FD40CF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="91574C3B-7805-B483-89F9-D2CE7A2F13E5" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="PTODUCT_UK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>PTODUCT_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>676A3F86-53D2-00BE-4873-65DCA0770F07</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7A3BC0A1-FC70-16B0-851B-121F47193DD6"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

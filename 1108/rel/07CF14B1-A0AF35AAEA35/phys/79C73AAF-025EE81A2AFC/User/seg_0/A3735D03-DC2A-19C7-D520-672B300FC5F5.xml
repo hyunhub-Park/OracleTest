@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="HR" directorySegmentName="seg_0" id="A3735D03-DC2A-19C7-D520-672B300FC5F5">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjName>HR</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:12 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<schemaObject>98CC284F-9578-CA6F-51C9-83AF7FDDB3F6</schemaObject>
+</UserOraclev10g>

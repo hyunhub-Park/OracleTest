@@ -1,0 +1,103 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="STUDENT" directorySegmentName="seg_0" id="CDA97BF4-D5C0-6823-063E-800F68DD53A9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<schemaObject>447A9599-1CCF-CB39-6C10-1922E35BE3F7</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>09E77C87-1673-5E0B-3461-052CC224218C</segment>
+<tableSpace>016CC818-AB63-3B15-2CA4-C63153AF3C6D</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PWD" id="0D5AFC56-8177-11BA-30C4-17386ADDD725">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="2BA890E2-7883-3AC8-190B-A98382EDCEDF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="40B9B90B-535C-D520-5BE2-74C2DEFA77CC">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PHONE" id="5650516B-4CE6-1E4D-5118-CEA283D1F3EA">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="EMAIL" id="586E2953-F11D-2E09-64C4-3F4D9BDE6222">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="STU_NUM" id="59DEDBCC-16BF-D220-7F2D-F1FB31026959">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SIGN_DATE" id="7EBF8F01-B581-6227-782F-E7DB4637CD60">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<defaultValue>sysdate</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="8EA397A4-FD65-1944-5DBC-BDCA31964593">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SERIAL_NUM" id="95487F89-B250-60F3-1D50-CBD5DC74A370">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SUB_NUM" id="BF8E126C-548C-CA8F-D873-FBD4ED55EA42">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="F1F8EFC8-285F-AE08-CC4E-B28818A1430A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="STUDENT_STU_NUM_PK" id="8FF3B473-BC12-8B20-39F3-4E31F0D89676">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<schemaObject>447A9599-1CCF-CB39-6C10-1922E35BE3F7</schemaObject>
+<segment>17AF5303-BB67-7C5A-9C01-FBE9C33E6DD0</segment>
+<tableSpace>016CC818-AB63-3B15-2CA4-C63153AF3C6D</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="STUDENT_SUB_NUM_FK" id="96F63CA5-FF58-4607-A648-287BC402633A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="STUDENT_STU_NUM_PK" id="601DECDA-A304-2CB8-AB58-E28488251BB9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<segment>17AF5303-BB67-7C5A-9C01-FBE9C33E6DD0</segment>
+<tableSpace>016CC818-AB63-3B15-2CA4-C63153AF3C6D</tableSpace>
+<existingIndex>8FF3B473-BC12-8B20-39F3-4E31F0D89676</existingIndex>
+<indexSegment>17AF5303-BB67-7C5A-9C01-FBE9C33E6DD0</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

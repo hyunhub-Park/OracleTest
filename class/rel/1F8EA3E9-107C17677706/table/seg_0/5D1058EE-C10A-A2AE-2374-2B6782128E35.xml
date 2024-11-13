@@ -1,0 +1,92 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="5D1058EE-C10A-A2AE-2374-2B6782128E35" schemaObject="447A9599-1CCF-CB39-6C10-1922E35BE3F7" name="SUBJECT">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SUBJECT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>C62064BB-BB24-54FA-CF22-6B6CDBD66F1C</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="A5C15ED1-7208-57AD-8D27-DA41FC318B23">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>0C90207B-AC25-9A3C-4D56-CD407528129A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,5,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SUB_NUM" id="86793EC4-8499-03BA-496C-A39F61AE8137">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>SUB_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>E2C04195-D58C-E6FC-6C53-088284A87816</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="09BB8BAE-A64D-9168-BA62-8791433A3A0A">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>5937BF1B-C062-07BA-8334-8BD0FA1AC4D7</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="C2BF72BB-AC43-6C15-29D5-FC0ABCE66C54" name="SUBJECT_SUB_NUM_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SUBJECT_SUB_NUM_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>86F95011-8B8F-E171-9EB4-6BBF132BF6F7</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86793EC4-8499-03BA-496C-A39F61AE8137"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="FC9361C9-A2D7-B2D9-3834-EBB232B731D5" schemaObject="447A9599-1CCF-CB39-6C10-1922E35BE3F7" name="SUBJECT_SUB_NUM_PK">
+<sourceConnName>로컬-HR</sourceConnName>
+<sourceObjSchema>HR</sourceObjSchema>
+<sourceObjName>SUBJECT_SUB_NUM_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 03:24:04 UTC</createdTime>
+<ownerDesignName>class</ownerDesignName>
+<importedID>6E2B4257-F402-40B5-0C8D-8E976B8B15D4</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="86793EC4-8499-03BA-496C-A39F61AE8137"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

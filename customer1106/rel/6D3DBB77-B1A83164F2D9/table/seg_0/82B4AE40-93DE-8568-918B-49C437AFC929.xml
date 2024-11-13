@@ -1,0 +1,114 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="82B4AE40-93DE-8568-918B-49C437AFC929" name="customer">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:20:18 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<ordsAlias>table_1</ordsAlias>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="no" id="12C150B2-7391-C249-A06D-C6693C898493">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:25:29 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>7 CHAR</dataTypeSize>
+<ownDataTypeParameters>7 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="name" id="9723CCE0-03C0-73F7-2639-3B40191272ED">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:25:29 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 CHAR</dataTypeSize>
+<ownDataTypeParameters>10 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="gender" id="E99E1F57-C7B8-E115-E377-B13B3D0C5CE2">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:25:55 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1 CHAR</dataTypeSize>
+<ownDataTypeParameters>1 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="birth" id="2CBE7AC5-9D14-F656-8450-3DF5B352858E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:27:05 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="phone" id="AB75DA54-6B22-7257-08FC-1BA9ADA2931D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:27:28 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>16 CHAR</dataTypeSize>
+<ownDataTypeParameters>16 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="email" id="3A86E8D0-E9EB-464A-1F85-70CA143FA5C0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:28:18 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>30 CHAR</dataTypeSize>
+<ownDataTypeParameters>30 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="point" id="36957A2D-F168-E189-9C50-3AABDB2EEEA0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:29:25 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="631DD98D-1BA1-61C1-5876-AE48D9787B0B" name="customer_no_pk">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:25:29 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="12C150B2-7391-C249-A06D-C6693C898493"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="CB88BC52-079F-598A-169D-0357CC099A24" name="customer_email_uk">
+<createdBy>user</createdBy>
+<createdTime>2024-11-06 06:31:35 UTC</createdTime>
+<ownerDesignName>customer1106</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3A86E8D0-E9EB-464A-1F85-70CA143FA5C0"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

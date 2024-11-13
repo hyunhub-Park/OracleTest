@@ -1,0 +1,66 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="V_GOGEK" directorySegmentName="seg_0" id="939A63F8-156C-0005-BAE3-773CA96AD86D">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:14 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<schemaObject>98CC284F-9578-CA6F-51C9-83AF7FDDB3F6</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>D928D27F-FBD7-5CF4-6BC0-18BF0E7A6141</segment>
+<tableSpace>BDEA7A35-A321-F4AF-1665-BB61D28A9295</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="G_AGE" id="44303A29-565A-20F5-482D-62D6E5B267F1">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<defaultValue>0</defaultValue>
+</ColumnProxy>
+<ColumnProxy name="G_CODE" id="49D7582C-8D2A-7872-8112-9F48D376C173">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_ADDR" id="9FE3CCA8-7D9D-1C8B-7775-E1454AA17A7F">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_TEL" id="B6977ED2-6F70-3367-D136-328A677BFB68">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="G_NAME" id="BD80E1FE-09B0-B9F5-EE85-4624C0BDD06E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:16 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="V_GOGEK_G_CODE_PK" id="326CA948-4233-9665-84C9-D32935B0ABB0">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:23 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<schemaObject>98CC284F-9578-CA6F-51C9-83AF7FDDB3F6</schemaObject>
+<segment>82D4F4B8-16C0-AFAE-8E97-F5330C344790</segment>
+<tableSpace>BDEA7A35-A321-F4AF-1665-BB61D28A9295</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="V_GOGEK_G_CODE_PK" id="9579C0D6-51E1-3A6B-E461-57D8DC832F74">
+<createdBy>user</createdBy>
+<createdTime>2024-11-07 14:27:24 UTC</createdTime>
+<ownerDesignName>1108</ownerDesignName>
+<segment>82D4F4B8-16C0-AFAE-8E97-F5330C344790</segment>
+<tableSpace>BDEA7A35-A321-F4AF-1665-BB61D28A9295</tableSpace>
+<existingIndex>326CA948-4233-9665-84C9-D32935B0ABB0</existingIndex>
+<indexSegment>82D4F4B8-16C0-AFAE-8E97-F5330C344790</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

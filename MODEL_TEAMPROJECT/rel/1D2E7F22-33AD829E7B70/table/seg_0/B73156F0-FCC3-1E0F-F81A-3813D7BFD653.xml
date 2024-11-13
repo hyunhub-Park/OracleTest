@@ -1,0 +1,164 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B73156F0-FCC3-1E0F-F81A-3813D7BFD653" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="CUSTOMER">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>CUSTOMER</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>F53797C2-C033-C2DD-ED01-1D5B86DE0E15</importedID>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="CODE" id="D392C91B-E8BE-8DB4-D3A0-6BD6D307A95C">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>CODE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>2ABB1B5A-DFDD-825B-FC17-425846D8C94D</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>2 CHAR</dataTypeSize>
+<ownDataTypeParameters>2 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="E666B350-BD1A-5A2C-C14D-AAA87CB50347">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>4DE161E2-66F7-F7C0-D6D7-C3C9CD10130A</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 CHAR</dataTypeSize>
+<ownDataTypeParameters>15 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PWD" id="62AFE1C9-BDA5-DE99-A9A1-CF76A8A984B3">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>PWD</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>6901C059-6909-C61A-147C-3F7D90D347C4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="31ED75B3-873C-E732-B54D-0810961C35B6">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>EB0D923C-C7AA-2269-66E2-7B2A0FEC673C</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>6 CHAR</dataTypeSize>
+<ownDataTypeParameters>6 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="2F6B9624-8014-9E3D-1066-48DEA74A0CB3">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>ADA3F064-05D5-A396-3DC2-CEC28A1E89A1</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50 CHAR</dataTypeSize>
+<ownDataTypeParameters>50 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="0C025C01-1418-5922-6CD4-4DCB8D1549BF">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>CUSTOMER</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>334BF2A4-028A-25FF-E4EF-A657C30106E4</importedID>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>13 CHAR</dataTypeSize>
+<ownDataTypeParameters>13 CHAR,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9EBB5263-7FB4-41FE-F069-5EE3F26D2C54" name="CUSTOMER_PK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>CUSTOMER_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>1C088F69-E81C-705A-5A33-A8D1512B29AF</importedID>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D392C91B-E8BE-8DB4-D3A0-6BD6D307A95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="69E5832A-8249-FC32-41F3-3B6D25020CCB" name="CUSTOMER_UK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>CUSTOMER_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>E25C0D44-FC2B-0537-C9E6-5C0B233EF319</importedID>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E666B350-BD1A-5A2C-C14D-AAA87CB50347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4980D494-80AB-8C72-3C59-47EB10AAC3B6" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="CUSTOMER_PK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>CUSTOMER_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>4E948917-460C-8374-34AC-BC1525EDE42E</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D392C91B-E8BE-8DB4-D3A0-6BD6D307A95C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="AED82317-CFDD-4267-BF20-3999EC5837EE" schemaObject="597E6520-01BF-7B4C-7AF4-2A5C12EF8889" name="CUSTOMER_UK">
+<sourceConnName>로컬-TEAMPROJECT_01</sourceConnName>
+<sourceObjSchema>TEAMPROJECT_01</sourceObjSchema>
+<sourceObjName>CUSTOMER_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<importedID>DDAFE4F9-8704-FD39-059F-B5EB442657CF</importedID>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E666B350-BD1A-5A2C-C14D-AAA87CB50347"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

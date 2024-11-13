@@ -1,0 +1,91 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="CUSTOMER" directorySegmentName="seg_0" id="B73156F0-FCC3-1E0F-F81A-3813D7BFD653">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>597E6520-01BF-7B4C-7AF4-2A5C12EF8889</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>1D1E1289-C833-5C16-5DDF-13227BDF4B0E</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="PHONE" id="0C025C01-1418-5922-6CD4-4DCB8D1549BF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ADDRESS" id="2F6B9624-8014-9E3D-1066-48DEA74A0CB3">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="31ED75B3-873C-E732-B54D-0810961C35B6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="PWD" id="62AFE1C9-BDA5-DE99-A9A1-CF76A8A984B3">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="CODE" id="D392C91B-E8BE-8DB4-D3A0-6BD6D307A95C">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="ID" id="E666B350-BD1A-5A2C-C14D-AAA87CB50347">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUSTOMER_PK" id="4980D494-80AB-8C72-3C59-47EB10AAC3B6">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>597E6520-01BF-7B4C-7AF4-2A5C12EF8889</schemaObject>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="CUSTOMER_UK" id="AED82317-CFDD-4267-BF20-3999EC5837EE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<schemaObject>597E6520-01BF-7B4C-7AF4-2A5C12EF8889</schemaObject>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="CUSTOMER_PK" id="9EBB5263-7FB4-41FE-F069-5EE3F26D2C54">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+<existingIndex>4980D494-80AB-8C72-3C59-47EB10AAC3B6</existingIndex>
+<indexSegment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="CUSTOMER_UK" id="69E5832A-8249-FC32-41F3-3B6D25020CCB">
+<createdBy>user</createdBy>
+<createdTime>2024-11-08 08:31:16 UTC</createdTime>
+<ownerDesignName>MODEL_TEAMPROJECT</ownerDesignName>
+<segment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</segment>
+<tableSpace>6C01FCD4-6E39-8E0E-B171-DE34B2F08F79</tableSpace>
+<existingIndex>AED82317-CFDD-4267-BF20-3999EC5837EE</existingIndex>
+<indexSegment>B3E539E7-2CAE-AB3E-2EEF-9E7634F87B58</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>
