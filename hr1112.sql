@@ -174,6 +174,7 @@ SELECT * FROM EX01 WHERE job_id=(SELECT job_id FROM EX01 WHERE first_name='Valli
 AND salary=(SELECT salary FROM EX01 WHERE first_name='Valli')
 and first_name <> 'Valli';
 
+Select * from employees where (job_id, salary) in (select job_id, salary from employees where first_name='Valli');
 
 
 -- EMPLOYEES 테이블에서 월급이 자신이(‘Valli’) 속한 부서의 평균 월급보다 높은 사원의 부서번호, 이름,급여를 출력하는 SELECT문을 작성하시오. --
@@ -185,6 +186,7 @@ SELECT department_id FROM EX01 WHERE first_name='Valli';
 SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=60;
 -- SELECT * FROM EX01 WHERE salary > (SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=60); --
 SELECT * FROM EX01 WHERE salary > (SELECT ROUND(AVG(salary)) FROM EX01 WHERE department_id=(SELECT department_id FROM EX01 WHERE first_name='Valli'));
+select department_id, first_name, salary from employees where salary > (select avg(salary) from employees where first_name='Valli');
 
 select * from employees where last_name='Tucker';
 
@@ -226,3 +228,9 @@ FROM employees
 WHERE department_id=E.department_id)) AS "Department Avg Salary" FROM employees E
 ORDER BY job_id;
 
+select first_name, last_name AS Name from employees where salary > (select salary from employees where last_name='Tucker');
+Select first_name, last_name AS Name, salary, department_id, job_id from employees E where salary > (select avg(salary) from employees WHERE department_id=E.department_id);
+
+SELECT first_name, last_name AS Name, salary, department_id, job_id FROM employees E
+WHERE E.salary > (SELECT AVG(salary) FROM employees WHERE department_id=E.department_id)
+ORDER BY job_id;
