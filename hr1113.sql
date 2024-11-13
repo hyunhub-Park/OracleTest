@@ -163,16 +163,43 @@ select * from view_dept30;
 -- 부서별 최대 급여 정보를 가지는 뷰(VIEW_DEPT_MAXSAL) 생성. --
 CREATE VIEW VIEW_DEPT_MAXSAL
 AS
-SELECT E.first_name, E.hire_date, D.department_name from emp_copy E inner join dep02 d
-ON E.department_id=D.department_id where D.department_id=30;
+SELECT D.department_name, MAX(E.salary) MAX_SAL FROM EMPLOYEES E, DEPARTMENTS D
+WHERE E.department_id=E.department_id
+GROUP BY D.department_name;
 
-select * from view_dept30;
+CREATE VIEW VIEW_DEPT_MAXSAL
+AS
+SELECT department_id, MAX(salary) AS MAX_SAL FROM EMPLOYEES
+GROUP BY department_id;
+
+create view emp79
+as
+select department_id, max(salary) AS MAX
+from employees
+group by department_id;
+
+select * from emp79;
+
+select * from VIEW_DEPT_MAXSAL;
+select * from employees;
+drop view VIEW_DEPT_MAXSAL;
+
+select * from employees;
+select * from departments;
+
 
 -- 급여를 많이 받는 순서대로 3명만 출력하는 뷰(VIEW_SAL_TOP3) 생성. --
-
-
-CREATE TABLE DEP02
+CREATE VIEW VIEW_SAL_TOP3
 AS
-SELECT * FROM departments WHERE 1=0;
+SELECT employee_id, last_name, salary FROM(SELECT employee_id, last_name, salary FROM EMPLOYEES ORDER BY salary desc)
+WHERE ROWNUM <= 3; --BETWEEN 1 AND 3;
 
-DESC dep02;
+select * from VIEW_SAL_TOP3;
+
+/*SELECT ROWNUM, e.* FROM(SELECT last_name, salary FROM employees ORDER BY salary DESC)e WHERE ROWNUM< =3;
+CREATE VIEW VIEW_SAL_TOP3
+AS
+SELECT ROWNUM, employee_id, salary AS SAL_TOP3
+FROM (SELECT employee_id, salary FROM emp_copy ORDER BY salary desc)
+WHERE ROWNUM <= 3;
+*/
