@@ -234,3 +234,21 @@ Select first_name, last_name AS Name, salary, department_id, job_id from employe
 SELECT first_name, last_name AS Name, salary, department_id, job_id FROM employees E
 WHERE E.salary > (SELECT AVG(salary) FROM employees WHERE department_id=E.department_id)
 ORDER BY job_id;
+
+
+-- 1112 과제 리뷰. --
+select job_id, min(salary) from employees group by job_id; /* 그룹 by를 기준으로 그룹에 대한 내용만 나옴. */
+select min(salary) from employees group by job_id;
+select * from employees;
+select first_name, job_id, salary, hire_date from employees where job_id='잡아이디' and salary='최소금액';
+select first_name, job_id, salary, hire_date from employees where (job_id, salary) in (select job_id, min(salary) from employees group by job_id);
+
+select department_id, round(avg(salary)) from employees group by department_id;
+select round(avg(salary)) from employees where department_id=90 group by department_id;
+select first_name, salary, E.department_id, job_id from employees E
+where E.salary > (select round(avg(salary)) from employees where department_id=E.department_id group by department_id);
+
+select round(avg(salary)) from employees group by department_id;
+
+select first_name, salary, E.department_id,
+(select round(avg(salary)) from employees where department_id=e.department_id group by department_id) as 부서평균급여 from employees E;
