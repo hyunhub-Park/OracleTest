@@ -327,9 +327,9 @@ END;
 /
 
 DECLARE
-    VNUM NUMBER :=3;
+    --VNUM NUMBER :=3;
     VCOUNT NUMBER :=1;
-    VDAN NUMBER := 0;
+    VDAN NUMBER :=0;
 
 BEGIN
     LOOP
@@ -346,14 +346,16 @@ BEGIN
             END IF;
         END LOOP;
         DBMS_OUTPUT.PUT_LINE('');
+        -- 단 출력. --
         IF VDAN > 9 THEN
-            EXIT
+            EXIT;
         END IF;
     END LOOP;
 
 END;
 /
 
+-- <<1114 과제>> --
 -- EMPLOYEES 테이블에 등록된 총사원의 수와 급여의 합, 급여의 평균을 변수에 대입하여 출력하기. --
 DECLARE
     VEMPLOYEE NUMBER;
