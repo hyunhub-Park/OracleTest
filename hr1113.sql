@@ -203,3 +203,65 @@ SELECT ROWNUM, employee_id, salary AS SAL_TOP3
 FROM (SELECT employee_id, salary FROM emp_copy ORDER BY salary desc)
 WHERE ROWNUM <= 3;
 */
+
+-- 사원번호, 사원명, 부서명, 부서위치 출력하는 VIEW_LOC 작성하기. --
+
+select employee_id, first_name, D.department_name, D.location_id from employees E, departments D where E.department_id=D.department_id;
+
+CREATE VIEW VIEW_LOC
+AS
+SELECT E.employee_id, E.first_name, D.department_name, D.location_id from emp_copy E inner join dep02 d
+ON E.department_id=D.department_id;
+
+select * from view_loc;
+
+CREATE VIEW my_VIEW01
+AS
+select employee_id, first_name, D.department_name, D.location_id from employees E, departments D where E.department_id=D.department_id;
+
+select * from my_VIEW01;
+
+/* inner JOIN */
+select employee_id, first_name, department_id from employees;
+select department_id, department_name, location_id from departments;
+
+select employee_id, concat(first_name, last_name), E.department_id, department_name, location_id
+/*select employee_id, first_name ||' '|| last_name as name, E.department_id, department_name, location_id*/
+from employees E inner join departments D on E.department_id=D.department_id;
+
+-- 30번 부서 소속 사원의 이름과 입사일과 부서명을 출력하는 VIEW_DEPT30 작성하기. --
+select E.first_name, E.hire_date, D.department_name from employees E, departments D where D.department_id=30 AND E.department_id=30;
+
+CREATE VIEW VIEW_DEPT30
+/*CREATE OR REPLACE VIEW VIEW_DEPT30*/
+AS
+SELECT E.first_name, E.hire_date, D.department_name from emp_copy E inner join dep02 d
+ON E.department_id=D.department_id where D.department_id=30;
+
+select * from view_dept30;
+
+-- 부서별 최대 급여 정보를 가지는 뷰(VIEW_DEPT_MAXSAL) 생성. --
+select distinct department_id, MAX(salary) from employees  group by department_id;
+
+CREATE VIEW VIEW_DEPT_MAXSAL
+AS
+SELECT department_id, MAX(salary) AS MAX_SAL FROM EMPLOYEES
+GROUP BY department_id;
+
+select * from VIEW_DEPT_MAXSAL;
+
+-- 급여를 많이 받는 순서대로 3명만 출력하는 뷰(VIEW_SAL_TOP3) 생성. --
+CREATE VIEW VIEW_SAL_TOP3
+AS
+SELECT employee_id, last_name, salary FROM(SELECT employee_id, last_name, salary FROM EMPLOYEES ORDER BY salary desc)
+WHERE ROWNUM <= 3; --BETWEEN 1 AND 3;
+
+select * from VIEW_SAL_TOP3;
+
+select rownum, salary, first_name, employee_id from employees
+where rownum <= 3 order by salary desc;
+
+/* 서브쿼리 사용 시, 원하는 순서대로 지정이 가능함. */
+select rownum, salary, first_name, employee_id 
+from(select salary, first_name, employee_id from employees order by salary desc)
+where rownum <= 3 order by salary desc;
