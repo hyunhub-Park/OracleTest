@@ -59,7 +59,7 @@ select * from emp_copy where employee_id=200;
 UPDATE view_emp01 SET salary=4500 where employee_id=200;    /* 원본도 수정이 함께 됨. */
 
 -- DATA DICTIONARY --
---USER_TABLES, USER_CONSTRAINTS, USER_CONS_COLUMNS, USER_VIEWS, USER_INDEXES--
+--USER_TABLES, USER_CONSTRAINTS, USER_CONS_COLUMNS, USER_VIEWS, USER_INDEXES, USER_IND_COLUMNS, USER_SOURCE, USER_SEQUENCES--
 SELECT * FROM user_tables;
 SELECT * FROM user_constraints;
 SELECT * FROM user_constraants_columns WHERE table_name='employees';
