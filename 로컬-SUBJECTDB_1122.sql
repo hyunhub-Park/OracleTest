@@ -12,6 +12,11 @@ ALTER TABLE SUBJECT ADD CONSTRAINT SUBJECT_NUM_UK UNIQUE(NUM);
 CREATE SEQUENCE SUBJECT_SEQ
 START WITH 1
 INCREMENT BY 1;
+
+SELECT * FROM SUBJECT;
+INSERT INTO SUBJECT(NO, NUM, NAME) VALUES(SUBJECT_SEQ.nextval, '01', 'IT학과');
+COMMIT; -- DML은 반드시 커밋!!!!
+
 ----------------------------------------------------------------------------------
 CREATE TABLE STUDENT
 ( 
@@ -42,6 +47,9 @@ desc student;
 CREATE SEQUENCE STUDENT_SEQ
 START WITH 1
 INCREMENT BY 1;
+
+INSERT INTO STUDENT VALUES(STUDENT_SEQ.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate);
+INSERT INTO STUDENT VALUES(STUDENT_SEQ.nextval, ?, ?, ?, ?, ?, ?, ?, ?, ?, sysdate);
 ----------------------------------------------------------------------------------
 CREATE TABLE LESSON
 ( 
@@ -57,22 +65,40 @@ CREATE SEQUENCE LESSON_SEQ
 START WITH 1
 INCREMENT BY 1;
 ----------------------------------------------------------------------
-create table trainee
+CREATE TABLE TRAINEE
 (
-    no number , -- pk, seq
-    s_num varchar2(8) not null,   -- student fk(학생번호).
-    abbre varchar2(2) not null,   -- lesson fk(과목요약).
-    section varchar2(20) not null,  -- 전공, 부전공, 교양
-    tdate date default sysdate    -- 수강신청일.
+    NO NUMBER, -- pk, seq
+    S_NUM VARCHAR(8) NOT NULL,   -- student fk(학생번호).
+    ABBRE VARCHAR2(2) NOT NULL,   -- lesson fk(과목요약).
+    SECTION VARCHAR2(20) NOT NULL,  -- 전공, 부전공, 교양
+    TDATE DATE DEFAULT SYSDATE    -- 수강신청일.
 );
 
-create sequence trainee_seq 
-start with 1
-increment by 1;
+ALTER TABLE TRAINEE ADD CONSTRAINT TRAINEE_NO_PK PRIMARY KEY(NO);
+
+ALTER TABLE TRAINEE ADD CONSTRAINT TRAINEE_STUDENT_NUM_FK
+FOREIGN KEY(S_NUM) REFERENCES STUDENT(NUM) ON DELETE SET NULL;
+
+ALTER TABLE TRAINEE ADD CONSTRAINT TRAINEE_LESSON_ABBRE_FK
+FOREIGN KEY(ABBRE) REFERENCES LESSON(ABBRE) ON DELETE SET NULL;
 
 
-
-
-
+CREATE SEQUENCE TRAINEE_SEQ
+START WITH 1
+INCREMENT BY 1;
 
 select * from subject;
+
+INSERT INTO SUBJECT(NO, NUM, NAME) VALUES(SUBJECT_SEQ.nextval, ?, ?);
+
+SELECT COUNT(*) AS CNT FROM STUDENT WHERE ID = 10;
+
+-- 동일 학과의 총 count.
+SELECT LPAD (COUNT(*)+1, 4, '0') AS TOTAL_COUNT FROM STUDENT WHERE S_NUM = '01';
+SELECT * FROM STUDENT;
+
+-- SUBJECT AND STUDENT간의 INNER JOIN
+SELECT * FROM STUDENT STU INNER JOIN SUBJECT SUB ON STU.S_NUM=SUB.NUM;
+SELECT STU.NO, STU.NUM, STU.NAME, STU.ID, PASSWD, STU.S_NUM, SUB.NAME AS SUBJECT_NAME, BIRTHDAY, PHONE, ADDRESS, EMAIL, SDATE
+FROM STUDENT STU INNER JOIN SUBJECT SUB ON STU.S_NUM=SUB.NUM;
+
