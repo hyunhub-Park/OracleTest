@@ -1,0 +1,6 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<SchemaObject class="oracle.dbtools.crest.model.design.relational.SchemaObject" name="SUBJECTDB" directorySegmentName="seg_0" id="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:26 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+</SchemaObject>

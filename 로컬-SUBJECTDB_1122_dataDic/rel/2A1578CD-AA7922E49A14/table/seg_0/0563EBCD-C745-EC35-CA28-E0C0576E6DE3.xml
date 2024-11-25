@@ -1,0 +1,263 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0563EBCD-C745-EC35-CA28-E0C0576E6DE3" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="STUDENT">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDENT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:26 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="753AAF6D-24D8-F3CA-0DDF-A82E49DA9E6A">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="BDEF08A8-42AD-D8DC-6638-BC3100C0CE9C">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="474EEF1B-679B-F260-0860-4494AD577C8A">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ID" id="7899BEAF-FA90-9ED8-2C7E-AD3C716F8FF4">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ID</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PASSWD" id="6BE994D8-22B8-F90F-046A-988A219A4743">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PASSWD</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12 BYTE</dataTypeSize>
+<ownDataTypeParameters>12 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_NUM" id="50805087-735E-0802-8CF4-F0095229FE4D">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>S_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="2CC174A7-E585-9A03-D1F7-52D00725FB60" referredColumn="D4054933-4E44-D6DF-B985-FE87BB4763AB"/>
+</associations>
+</Column>
+<Column name="BIRTHDAY" id="BFFA9E60-75D0-A810-3FC7-773FCF076503">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>BIRTHDAY</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="PHONE" id="6EBB5202-30F8-59B2-0871-7EBEF6AE474A">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>PHONE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>15 BYTE</dataTypeSize>
+<ownDataTypeParameters>15 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="ADDRESS" id="0ACE1ADC-503F-29E3-3CDD-7CA81555BFB5">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>ADDRESS</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>80 BYTE</dataTypeSize>
+<ownDataTypeParameters>80 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="EMAIL" id="380FD87A-4DF3-C992-DF64-241B093A2A53">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>EMAIL</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>40 BYTE</dataTypeSize>
+<ownDataTypeParameters>40 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SDATE" id="B7DFE168-DE53-3643-8F94-5AD299D1F6D5">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>STUDENT</sourceObjSchema>
+<sourceObjName>SDATE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>SYSDATE  -- 등록일</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="92ABCFB1-B683-9065-AA48-088F99D9B08D" name="STUDETN_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="753AAF6D-24D8-F3CA-0DDF-A82E49DA9E6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="64ABC252-730B-4B93-C4CD-5693D86672E8" name="STUDETN_ID_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_ID_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7899BEAF-FA90-9ED8-2C7E-AD3C716F8FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="4DF23A1D-DDE0-03F2-F62F-C60E2E3136DA" name="STUDETN_NUM_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_NUM_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDEF08A8-42AD-D8DC-6638-BC3100C0CE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="1A85BA49-86A6-7791-2F76-D6505B702ED6" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="STUDETN_ID_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_ID_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="7899BEAF-FA90-9ED8-2C7E-AD3C716F8FF4"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F0F45BD3-37E1-41A3-0114-2FAF18A1437E" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="STUDETN_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="753AAF6D-24D8-F3CA-0DDF-A82E49DA9E6A"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="8EA24D31-F873-9F40-1C0A-F16AFB10509B" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="STUDETN_NUM_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>STUDETN_NUM_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="BDEF08A8-42AD-D8DC-6638-BC3100C0CE9C"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F25AD681-2269-5384-F97E-E14B94DCC72E" name="STUDETN_SUBJECT_NUM_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:38 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="50805087-735E-0802-8CF4-F0095229FE4D"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

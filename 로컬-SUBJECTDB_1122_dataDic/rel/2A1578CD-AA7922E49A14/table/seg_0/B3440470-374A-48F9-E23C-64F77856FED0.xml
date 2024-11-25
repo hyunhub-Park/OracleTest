@@ -1,0 +1,110 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="B3440470-374A-48F9-E23C-64F77856FED0" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="SUBJECT">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>SUBJECT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:26 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="F918BF9D-4A89-3B49-B8AB-1B207605591F">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NUM" id="D4054933-4E44-D6DF-B985-FE87BB4763AB">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="NAME" id="9B54E9A4-7513-EC1D-0063-C938174CEB37">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECT</sourceObjSchema>
+<sourceObjName>NAME</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>24 BYTE</dataTypeSize>
+<ownDataTypeParameters>24 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="6AF0A840-FEA2-6CF2-4AA8-2A2C5119C036" name="SUBJECT_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>SUBJECT_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F918BF9D-4A89-3B49-B8AB-1B207605591F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="9066AD07-3935-8E54-5B3B-8B5A4B152E38" name="SUBJECT_NUM_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>SUBJECT_NUM_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4054933-4E44-D6DF-B985-FE87BB4763AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="6400AE0E-D3DF-226A-6B85-3246463396E0" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="SUBJECT_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>SUBJECT_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="F918BF9D-4A89-3B49-B8AB-1B207605591F"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="7B98928D-02D6-521E-341F-563FEA092765" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="SUBJECT_NUM_UK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>SUBJECT_NUM_UK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D4054933-4E44-D6DF-B985-FE87BB4763AB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

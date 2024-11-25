@@ -1,0 +1,7 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<LogicalDesign class="oracle.dbtools.crest.model.design.logical.LogicalDesign" name="Logical" id="D7324109-89FB-4A4A-5C6E-F323DC0AC072" mainViewID="41586189-3B2D-441C-7630-5621698DE550">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:56:35 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<shouldBeOpen>false</shouldBeOpen>
+</LogicalDesign>

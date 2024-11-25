@@ -1,0 +1,76 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="LESSON" directorySegmentName="seg_0" id="13A9FCAD-7600-5FFD-F15D-67E59986D6F9">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:26 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<schemaObject>C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>15048193-38E2-2347-B9E2-D2505926656F</segment>
+<tableSpace>1B964BFB-CC68-DFE4-6D41-41D60A76598B</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="ABBRE" id="0EBB26B2-B127-1DDE-BFA4-81BB30735D1E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="9C4EDB1D-BFA5-930D-3702-7E5D492AA897">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NAME" id="B414BA17-F81C-51BB-C033-4D1C0D22074E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LESSON_ABBRE_UK" id="1800F6C3-66DB-5048-F043-DF280B3BDB0F">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<schemaObject>C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579</schemaObject>
+<segment>72F659DD-8FC0-A43F-345C-F4D79A26799E</segment>
+<tableSpace>1B964BFB-CC68-DFE4-6D41-41D60A76598B</tableSpace>
+</IndexProxy>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="LESSON_NO_PK" id="76C8BA4F-39C7-EAC6-2EC4-9EDEBA0EDE80">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<schemaObject>C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579</schemaObject>
+<segment>72F659DD-8FC0-A43F-345C-F4D79A26799E</segment>
+<tableSpace>1B964BFB-CC68-DFE4-6D41-41D60A76598B</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="LESSON_NO_PK" id="B89F6E24-25EA-E8C8-247A-47D5F104F248">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<segment>72F659DD-8FC0-A43F-345C-F4D79A26799E</segment>
+<tableSpace>1B964BFB-CC68-DFE4-6D41-41D60A76598B</tableSpace>
+<existingIndex>76C8BA4F-39C7-EAC6-2EC4-9EDEBA0EDE80</existingIndex>
+<indexSegment>72F659DD-8FC0-A43F-345C-F4D79A26799E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+<uniqueKeys>
+<UniqueKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UniqueOraclev10g" name="LESSON_ABBRE_UK" id="DDC78188-89AA-1C88-F6B1-C85CDD1043D5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<segment>72F659DD-8FC0-A43F-345C-F4D79A26799E</segment>
+<tableSpace>1B964BFB-CC68-DFE4-6D41-41D60A76598B</tableSpace>
+<existingIndex>1800F6C3-66DB-5048-F043-DF280B3BDB0F</existingIndex>
+<indexSegment>72F659DD-8FC0-A43F-345C-F4D79A26799E</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</UniqueKey>
+</uniqueKeys>
+</TableProxyOraclev12c>

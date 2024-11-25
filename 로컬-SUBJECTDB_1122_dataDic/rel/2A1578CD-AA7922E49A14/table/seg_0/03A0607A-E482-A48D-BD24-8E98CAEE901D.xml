@@ -1,0 +1,140 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03A0607A-E482-A48D-BD24-8E98CAEE901D" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="TRAINEE">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:26 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="478FFE09-7659-3913-966D-B15566F7EE49">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="S_NUM" id="0FDC11B7-A36B-F09C-C7C0-FB37072550E1">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>S_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8 BYTE</dataTypeSize>
+<ownDataTypeParameters>8 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="17526A87-38AF-3697-E5B4-26E3A2A120A4" referredColumn="BDEF08A8-42AD-D8DC-6638-BC3100C0CE9C"/>
+</associations>
+</Column>
+<Column name="ABBRE" id="A2327BF6-84AC-0094-6B31-025391E80ADB">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>ABBRE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>2 BYTE</dataTypeSize>
+<ownDataTypeParameters>2 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="91127E02-1AFB-6FEF-CB50-917E017B9015" referredColumn="0EBB26B2-B127-1DDE-BFA4-81BB30735D1E"/>
+</associations>
+</Column>
+<Column name="SECTION" id="A3C9ACB8-802D-F6A4-D531-6D99C825284C">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>SECTION</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="TDATE" id="71DAA076-56C2-97DC-8FB0-6B6897370492">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>TRAINEE</sourceObjSchema>
+<sourceObjName>TDATE</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:30 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<defaultValue>sysdate    -- 수강신청일.</defaultValue>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="1676E379-11F2-1196-6F01-21858AFB69F2" name="TRAINEE_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:34 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="478FFE09-7659-3913-966D-B15566F7EE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="F8D010DB-3A6A-BDFA-8D65-0E209C72D5F8" schemaObject="C9E4B7F8-E69E-DF3B-AE2A-21BECDF73579" name="TRAINEE_NO_PK">
+<sourceConnName>로컬-SUBJECTDB</sourceConnName>
+<sourceObjSchema>SUBJECTDB</sourceObjSchema>
+<sourceObjName>TRAINEE_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:31 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="478FFE09-7659-3913-966D-B15566F7EE49"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="78644198-A95B-479F-0F4E-B97EC805FFAE" name="TRAINEE_LESSON_ABBRE_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:38 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A2327BF6-84AC-0094-6B31-025391E80ADB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B496CBB1-89B4-C840-CBE3-D9D2377F6BAD" name="TRAINEE_STUDENT_NUM_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:58:38 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="0FDC11B7-A36B-F09C-C7C0-FB37072550E1"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>
