@@ -1,0 +1,8 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="로컬-SUBJECTDB_1122_dataDic" id="64203DC4-885E-190B-C438-812FEF05CA56" version="3.5">
+<createdBy>user</createdBy>
+<createdTime>2024-11-22 03:56:35 UTC</createdTime>
+<ownerDesignName>로컬-SUBJECTDB_1122_dataDic</ownerDesignName>
+<capitalNames>false</capitalNames>
+<designId>64203DC4-885E-190B-C438-812FEF05CA56</designId>
+</OSDM_Design>
