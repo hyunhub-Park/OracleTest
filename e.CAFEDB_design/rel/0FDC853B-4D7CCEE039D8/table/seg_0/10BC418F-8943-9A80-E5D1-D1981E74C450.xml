@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="10BC418F-8943-9A80-E5D1-D1981E74C450" schemaObject="D1B627D2-6A24-F607-C041-5287DB78D5CA" name="REVIEW">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>REVIEW</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="M_NUM" id="3E51ADF6-E465-A9DD-C4C9-D3AF9D1DACAB">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>REVIEW</sourceObjSchema>
+<sourceObjName>M_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="96ECE5F0-2DBE-4F73-D706-738EC5524413" referredColumn="62183518-D68F-CAFF-2E53-1D606C638469"/>
+</associations>
+</Column>
+<Column name="REVIEW" id="7F9D42B0-4C96-52DC-43CB-DED2C335416E">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>REVIEW</sourceObjSchema>
+<sourceObjName>REVIEW</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>100 BYTE</dataTypeSize>
+<ownDataTypeParameters>100 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="7CC38B64-46F7-DB45-77E9-3479F7F9BBC0" name="REVIEW_M_NUM_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3E51ADF6-E465-A9DD-C4C9-D3AF9D1DACAB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

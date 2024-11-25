@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="96ECE5F0-2DBE-4F73-D706-738EC5524413" containerWithKeyObject="10BC418F-8943-9A80-E5D1-D1981E74C450" localFKIndex="7CC38B64-46F7-DB45-77E9-3479F7F9BBC0" name="REVIEW_M_NUM_FK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>REVIEW_M_NUM_FK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<referredTableLongName>CAFEDB.MENU</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>4B526039-7695-BDB6-F3C2-CB5174F2A17E</referredTableID>
+<keyObject>3B93F972-CC7D-5A20-9731-87893F4E546A</keyObject>
+<referredKeyID>3B93F972-CC7D-5A20-9731-87893F4E546A</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>NO</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

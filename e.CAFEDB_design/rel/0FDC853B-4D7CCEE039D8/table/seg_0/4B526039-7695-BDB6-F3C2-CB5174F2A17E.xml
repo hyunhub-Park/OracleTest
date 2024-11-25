@@ -1,0 +1,100 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="4B526039-7695-BDB6-F3C2-CB5174F2A17E" schemaObject="D1B627D2-6A24-F607-C041-5287DB78D5CA" name="MENU">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="62183518-D68F-CAFF-2E53-1D606C638469">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRINK" id="F0B09036-9A8B-9A8F-F4C1-B457C3A6B359">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>DRINK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SNACK" id="6D271B1B-9D4D-B050-935B-61CDB9954840">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>SNACK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESSERT" id="D8E3E883-915F-02BD-67CA-C9785BBCEE65">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>DESSERT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="3B93F972-CC7D-5A20-9731-87893F4E546A" name="MENU_NO_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62183518-D68F-CAFF-2E53-1D606C638469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5310E089-9034-EE4B-0FD1-2B825D692A65" schemaObject="D1B627D2-6A24-F607-C041-5287DB78D5CA" name="MENU_NO_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="62183518-D68F-CAFF-2E53-1D606C638469"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

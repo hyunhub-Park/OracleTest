@@ -1,0 +1,9 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<UserOraclev10g class="oracle.dbtools.crest.model.design.storage.oracle.v10g.UserOraclev10g" name="CAFEDB" directorySegmentName="seg_0" id="BE432F46-450D-CD4A-4B45-824A1FDE8CE2">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjName>CAFEDB</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-24 18:29:27 UTC</createdTime>
+<ownerDesignName>e.CAFEDB_design</ownerDesignName>
+<schemaObject>D1B627D2-6A24-F607-C041-5287DB78D5CA</schemaObject>
+</UserOraclev10g>
