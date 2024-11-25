@@ -1,0 +1,119 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3E2785A1-8C13-63BF-0D84-F5BD3410078A" schemaObject="0931FB66-23D4-D7F9-3DD2-84E8B3719C33" name="MENU">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:35 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DRINK" id="7B7C2193-3B61-44B9-55B4-BFCF59733E72">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>DRINK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="SNACK" id="6D82F6C0-B825-93F0-4D20-2B5FC650DA3B">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>SNACK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="DESSERT" id="CBE1C64F-17EC-B0A1-2DD2-41E17272A09B">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>DESSERT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20 BYTE</dataTypeSize>
+<ownDataTypeParameters>20 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="IN_OR_OUT" id="B66DF3D5-FA64-DBE5-40E0-D139D5E87CFA">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>MENU</sourceObjSchema>
+<sourceObjName>IN_OR_OUT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<constraintName>MENU_IN_OR_OUT_CK</constraintName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>3 BYTE</dataTypeSize>
+<listOfValues>
+<valueDef value="&apos;N&apos;" description=""/>
+<valueDef value="&apos;Y&apos;" description=""/>
+</listOfValues>
+<ownDataTypeParameters>3 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="CFABE81C-44CB-9FE3-1931-87404DF485BF" name="MENU_NO_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:39 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="EE9911FD-2556-CB7E-C853-1DCFFD09ED8E" schemaObject="0931FB66-23D4-D7F9-3DD2-84E8B3719C33" name="MENU_NO_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>MENU_NO_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:37 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

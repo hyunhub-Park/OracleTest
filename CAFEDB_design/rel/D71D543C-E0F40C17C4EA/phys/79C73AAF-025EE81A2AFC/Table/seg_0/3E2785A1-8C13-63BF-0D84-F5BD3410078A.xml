@@ -1,0 +1,65 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="MENU" directorySegmentName="seg_0" id="3E2785A1-8C13-63BF-0D84-F5BD3410078A">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:35 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<schemaObject>0931FB66-23D4-D7F9-3DD2-84E8B3719C33</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B1D9B610-8666-DBD0-9111-899EF2A57976</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="NO" id="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="SNACK" id="6D82F6C0-B825-93F0-4D20-2B5FC650DA3B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DRINK" id="7B7C2193-3B61-44B9-55B4-BFCF59733E72">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="IN_OR_OUT" id="B66DF3D5-FA64-DBE5-40E0-D139D5E87CFA">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="DESSERT" id="CBE1C64F-17EC-B0A1-2DD2-41E17272A09B">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="MENU_NO_PK" id="EE9911FD-2556-CB7E-C853-1DCFFD09ED8E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:37 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<schemaObject>0931FB66-23D4-D7F9-3DD2-84E8B3719C33</schemaObject>
+<segment>F183668E-C491-14D6-925C-AAD0D7257945</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="MENU_NO_PK" id="CFABE81C-44CB-9FE3-1931-87404DF485BF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:39 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<segment>F183668E-C491-14D6-925C-AAD0D7257945</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+<existingIndex>EE9911FD-2556-CB7E-C853-1DCFFD09ED8E</existingIndex>
+<indexSegment>F183668E-C491-14D6-925C-AAD0D7257945</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>

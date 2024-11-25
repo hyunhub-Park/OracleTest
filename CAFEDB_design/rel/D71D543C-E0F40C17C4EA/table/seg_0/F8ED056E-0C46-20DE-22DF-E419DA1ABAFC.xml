@@ -1,0 +1,99 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="F8ED056E-0C46-20DE-22DF-E419DA1ABAFC" schemaObject="0931FB66-23D4-D7F9-3DD2-84E8B3719C33" name="EVENT">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>EVENT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:35 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="NO" id="A839086F-3776-FFE7-8A30-270A71895C4E">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>EVENT</sourceObjSchema>
+<sourceObjName>NO</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="26EC6FEF-2A29-14C5-85DE-026F00D734B0" referredColumn="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC"/>
+</associations>
+</Column>
+<Column name="AREA" id="9FACF31B-E1D7-3334-8201-FAF842249032">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>EVENT</sourceObjSchema>
+<sourceObjName>AREA</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="COUNT" id="9280FBCA-D5BE-C58F-2A3C-2F8F75393142">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>EVENT</sourceObjSchema>
+<sourceObjName>COUNT</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>2</dataTypePrecision>
+<dataTypeScale>0</dataTypeScale>
+<ownDataTypeParameters>,2,0</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="61DACCD5-B5C9-C6C7-8BAE-6BC34B6D6478" name="EVENT_AREA_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>EVENT_AREA_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:39 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FACF31B-E1D7-3334-8201-FAF842249032"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E91870FB-76FE-4AA6-0B1C-1505808585FE" schemaObject="0931FB66-23D4-D7F9-3DD2-84E8B3719C33" name="EVENT_AREA_PK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>EVENT_AREA_PK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:37 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="9FACF31B-E1D7-3334-8201-FAF842249032"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="B49262A8-F02D-8DE5-D97D-BED4789B6AAF" name="EVENT_NO_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:41 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A839086F-3776-FFE7-8A30-270A71895C4E"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

@@ -1,0 +1,19 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<FKIndexAssociation class="oracle.dbtools.crest.model.design.relational.FKIndexAssociation" directorySegmentName="seg_0" id="12AF7A8E-EBEB-E3F0-6837-FA70E3BED783" containerWithKeyObject="3EB496D6-B34D-79B3-51E0-EAFBF01A0A5E" localFKIndex="31F780E2-2EFB-B3B7-6686-BF27B0B14458" name="ORDER_CHECK_E_AREA_FK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>ORDER_CHECK_E_AREA_FK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:41 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<referredTableLongName>CAFEDB.EVENT</referredTableLongName>
+<deleteRule>CASCADE</deleteRule>
+<referredTableID>F8ED056E-0C46-20DE-22DF-E419DA1ABAFC</referredTableID>
+<keyObject>61DACCD5-B5C9-C6C7-8BAE-6BC34B6D6478</keyObject>
+<referredKeyID>61DACCD5-B5C9-C6C7-8BAE-6BC34B6D6478</referredKeyID>
+<mandatory>false</mandatory>
+<refColNames>AREA</refColNames>
+<transferable>true</transferable>
+<rely>false</rely>
+<columnDependencyConstraintGenerateInDDL>true</columnDependencyConstraintGenerateInDDL>
+</FKIndexAssociation>

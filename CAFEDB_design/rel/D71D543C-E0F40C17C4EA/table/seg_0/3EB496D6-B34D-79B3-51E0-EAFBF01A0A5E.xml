@@ -1,0 +1,71 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="3EB496D6-B34D-79B3-51E0-EAFBF01A0A5E" schemaObject="0931FB66-23D4-D7F9-3DD2-84E8B3719C33" name="ORDER_CHECK">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>CAFEDB</sourceObjSchema>
+<sourceObjName>ORDER_CHECK</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:35 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="M_NUM" id="EB6001D5-0E13-2A6A-C76E-B94B23EE90E9">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>ORDER_CHECK</sourceObjSchema>
+<sourceObjName>M_NUM</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="C27A7885-EB85-166D-3213-DBC1F475BC2D" referredColumn="4CAE2CA9-39A6-6595-C86C-3ED3793A61BC"/>
+</associations>
+</Column>
+<Column name="E_AREA" id="EAB754F0-84E3-2ECA-AF18-48EA5994C4B8">
+<sourceConnName>로컬-CAFEDB</sourceConnName>
+<sourceObjSchema>ORDER_CHECK</sourceObjSchema>
+<sourceObjName>E_AREA</sourceObjName>
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10 BYTE</dataTypeSize>
+<ownDataTypeParameters>10 BYTE,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="12AF7A8E-EBEB-E3F0-6837-FA70E3BED783" referredColumn="9FACF31B-E1D7-3334-8201-FAF842249032"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="31F780E2-2EFB-B3B7-6686-BF27B0B14458" name="ORDER_CHECK_E_AREA_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:41 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EAB754F0-84E3-2ECA-AF18-48EA5994C4B8"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5CEE853D-6BFB-E1B0-F8D8-94B08AEFA06D" name="ORDER_CHECK_M_NUM_FK">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:41 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="EB6001D5-0E13-2A6A-C76E-B94B23EE90E9"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

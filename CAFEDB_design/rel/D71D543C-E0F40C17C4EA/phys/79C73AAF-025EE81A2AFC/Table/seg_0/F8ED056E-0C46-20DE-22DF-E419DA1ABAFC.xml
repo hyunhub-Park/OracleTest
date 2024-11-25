@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<TableProxyOraclev12c class="oracle.dbtools.crest.model.design.storage.oracle.v12c.TableProxyOraclev12c" name="EVENT" directorySegmentName="seg_0" id="F8ED056E-0C46-20DE-22DF-E419DA1ABAFC">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:35 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<schemaObject>0931FB66-23D4-D7F9-3DD2-84E8B3719C33</schemaObject>
+<logging>YES</logging>
+<partitionedRowMovement>DISABLE</partitionedRowMovement>
+<segment>B1D9B610-8666-DBD0-9111-899EF2A57976</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+<temporaryChanged>false</temporaryChanged>
+<accessDriverType>oracle_loader</accessDriverType>
+<rejectLimit></rejectLimit>
+<inMemory>NO</inMemory>
+<columnProxies itemClass="oracle.dbtools.crest.model.design.storage.oracle.v12c.ColumnProxyOraclev12c">
+<ColumnProxy name="COUNT" id="9280FBCA-D5BE-C58F-2A3C-2F8F75393142">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="AREA" id="9FACF31B-E1D7-3334-8201-FAF842249032">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+<ColumnProxy name="NO" id="A839086F-3776-FFE7-8A30-270A71895C4E">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:36 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ColumnProxy>
+</columnProxies>
+<indexProxies>
+<IndexProxy class="oracle.dbtools.crest.model.design.storage.oracle.v10g.IndexProxyOraclev10g" name="EVENT_AREA_PK" id="E91870FB-76FE-4AA6-0B1C-1505808585FE">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:37 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<schemaObject>0931FB66-23D4-D7F9-3DD2-84E8B3719C33</schemaObject>
+<segment>F183668E-C491-14D6-925C-AAD0D7257945</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+</IndexProxy>
+</indexProxies>
+<foreignKeys>
+<ForeignKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.FKProxyOraclev10g" name="EVENT_NO_FK" id="B49262A8-F02D-8DE5-D97D-BED4789B6AAF">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:41 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+</ForeignKey>
+</foreignKeys>
+<primaryKeys>
+<PrimaryKey class="oracle.dbtools.crest.model.design.storage.oracle.v10g.PKProxyOraclev10g" name="EVENT_AREA_PK" id="61DACCD5-B5C9-C6C7-8BAE-6BC34B6D6478">
+<createdBy>user</createdBy>
+<createdTime>2024-11-23 16:26:39 UTC</createdTime>
+<ownerDesignName>CAFEDB_design</ownerDesignName>
+<segment>F183668E-C491-14D6-925C-AAD0D7257945</segment>
+<tableSpace>3F9F79B1-BC37-EF42-632F-35CFF44D5D5A</tableSpace>
+<existingIndex>E91870FB-76FE-4AA6-0B1C-1505808585FE</existingIndex>
+<indexSegment>F183668E-C491-14D6-925C-AAD0D7257945</indexSegment>
+<indexSort>SORTED</indexSort>
+<usingIndex>BY INDEX NAME</usingIndex>
+</PrimaryKey>
+</primaryKeys>
+</TableProxyOraclev12c>
