@@ -151,3 +151,4 @@ COMMIT;
 SELECT * FROM MOVIE2;
 
 --제약조건이 있는 테이블 강제삭제 DROP TABLE member_basic CASCADE CONSTRAINTS PURGE;--
+--drop table board cascade constraints;--
