@@ -45,5 +45,42 @@ public static void main (String [] args)
 2. [kh 홈페이지](https://www.naver.com)
 
 # 이미지
-![오라클테스팅]
-https://github.com/hyunhub-Park/OracleTest/blob/dev/apple.png
+![오라클테스팅](https://github.com/hyunhub-Park/OracleTest/blob/dev/apple.png)
+<img src="https://github.com/hyunhub-Park/OracleTest/blob/dev/apple.png" width="400px" alt="sample image">
+
+# 인용상자
+> 인용문 사용시.
+>
+
+# 강조기능
+*강조문장입니다.*
+
+_강조문장입니다._
+
+_이건 italy인가..?_
+
+**강조문장**
+
+중간에도 **강조문장** 가능
+
+# 테이블
+헤더 | 헤더
+-----|-----
+메뉴 | 가격
+메뉴 | 가격
+
+# 체크박스
+- [X] 체크박스
+- [ ] 체크박스
+- [ ] 체크박스
+
+# 탈출문자
+\*\*탈출문자\*\*
+＼*literal asterisks＼* 
+*literal asterisks* 
+__＼*＼*Text＼*＼*__ 
+_＼_Tom＼__
+
+# 이모지
+❤
+<https://www.webfx.com/tools/emoji-cheat-sheet/>
