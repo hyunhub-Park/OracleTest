@@ -37,3 +37,12 @@ CREATE USER webuser IDENTIFIED BY 123456 -- 사용자 이름: Model, 비밀번호 : 1234
     DEFAULT TABLESPACE USERS    -- 데이터 저장소. --
     TEMPORARY TABLESPACE TEMP;  -- 임시 저장 장소. --
 GRANT connect, resource, dba TO webuser; -- 권한 부여
+
+
+----------------------- PROJECT01_FLO ----------------------------
+ALTER SESSION SET "_ORACLE_SCRIPT"=true;
+DROP USER PROJECT01_FLO CASCADE; -- 기존 사용자 삭제
+CREATE USER PROJECT01_FLO IDENTIFIED BY 123456 -- 사용자 이름: Model, 비밀번호 : 1234
+    DEFAULT TABLESPACE USERS    -- 데이터 저장소. --
+    TEMPORARY TABLESPACE TEMP;  -- 임시 저장 장소. --
+GRANT connect, resource, dba TO PROJECT01_FLO; -- 권한 부여
