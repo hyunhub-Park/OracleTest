@@ -9,6 +9,17 @@ CREATE TABLE code_group
     PRIMARY KEY (group_code)
 );
 
+SELECT * FROM CODE_GROUP;
+		SELECT group_code,
+				group_name,
+				use_yn,
+				reg_date
+		FROM code_group
+		ORDER BY group_code DESC,
+		reg_date DESC;
+        
+INSERT INTO code_group (group_code, group_name) VALUES ('A00', '직업');
+
 -- 코드 상세 테이블. -----------------------------------------------
 CREATE TABLE code_detail
 (
@@ -21,6 +32,23 @@ CREATE TABLE code_detail
     upd_date DATE DEFAULT SYSDATE,
     PRIMARY KEY (group_code, code_value)
 );
+
+SELECT * FROM code_detail;
+
+INSERT INTO code_detail (group_code, code_value, code_name, sort_seq)
+VALUES ('A00', '01', '개발자', 1);
+
+INSERT INTO code_detail (group_code, code_value, code_name, sort_seq)
+VALUES ('A00', '02', '디자이너', 2);
+
+INSERT INTO code_detail (group_code, code_value, code_name, sort_seq)
+VALUES ('A00', '03', '매니저', 3);
+
+INSERT INTO code_detail (group_code, code_value, code_name, sort_seq)
+VALUES ('A00', '04', '분석가', 4);
+
+COMMIT;
+
 
 CREATE TABLE member
 (
@@ -40,11 +68,15 @@ create sequence member_seq
 start with 1
 increment by 1;
 
+SELECT * FROM MEMBER;
+
 CREATE TABLE member_auth 
 (
     user_no NUMBER(5) NOT NULL,
     auth VARCHAR2(50) NOT NULL
 );
+
+select * from member_auth;
 
 -- member, member_auth 테이블 join 제약조건.------------------------
 ALTER TABLE member_auth ADD CONSTRAINT fk_member_auth_user_no
@@ -83,6 +115,9 @@ CREATE TABLE board
 create sequence board_seq
 start with 1
 increment by 1;
+
+SELECT * FROM BOARD;
+
 
 -- 공지사항 ---------------------------------------------------
 CREATE TABLE notice 
@@ -155,4 +190,4 @@ CREATE TABLE pay_coin_history
 
 create sequence pay_coin_history_seq
 start with 1
-increment by 1;,
+increment by 1;
